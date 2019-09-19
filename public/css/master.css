@@ -1,0 +1,156 @@
+/*-- body --*/
+body {
+    background: url(../img/fond.jpg);
+    background-attachment: fixed;
+}
+
+/*-- navbar --*/
+.navbar {
+    margin: 5% 10%;
+    margin-bottom: 10%;
+    padding: 4px 1%;
+    border: none;
+    z-index: 1000;
+}
+
+.sticky {
+    position: sticky;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        margin: inherit;
+        padding: 15px 1rem;
+        margin-bottom: 10%;
+    }
+
+    .nav-link {
+        display: inline;
+        padding: 15px 1rem;
+    }
+    
+    .navbar-dark .navbar-nav .active>.nav-link {
+        background-color: rgba(111,16,10, 0.6);
+        border: none;
+    }
+    
+    .navbar-nav > .active > a:hover, .navbar-dark .navbar-nav .nav-link:hover {
+        color: rgb(130,15,11);
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        margin: 5% 10%;
+        padding: 4px 1%;
+        margin-bottom: 10%;
+    }
+
+    .fixed {
+        position: fixed;
+        transition: .25s;
+        width: 100%;
+        margin: inherit;
+        padding: 4px 1%;
+    }
+
+    .fixed .center-block {
+        display: none;
+    }
+
+    .bg-dark.fixed {
+        background-color: rgba(10, 10, 10, 1) !important;
+    }
+}
+
+.navbar-nav {
+    border-radius: 3px;
+}
+
+.center-block {
+    display: none;
+}
+ 
+@media (min-width: 1200px) {
+    .center-block {
+        margin-top: 22px;
+        margin-left: 40%;
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.btn-outline-danger {
+    color: rgb(130,15,11);
+    border-color: rgb(130,15,11);
+}
+
+.btn-outline-danger:hover {
+    background-color: rgba(111,16,10, 0.6);
+    border-color: rgb(130,15,11);
+}
+
+/*-- footer --*/
+.footer {
+    position: relative !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding-top: 2%;
+}
+
+footer .container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1px;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover, footer a:active, footer a:focus {
+    color: rgb(130,15,11);
+}
+
+/*-- content --*/
+.bg-dark {
+    background-color: rgba(10, 10, 10, 0.6) !important;
+    border-radius: 3px;
+}
+
+.container {
+    padding: 5%;
+}
+
+@media (min-width: 992px) {
+    section.container {
+        padding: 0;
+    }
+}
+
+a {
+    color: rgb(130,15,11);
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+small {
+    font-size: 65%;
+}

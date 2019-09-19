@@ -1,0 +1,59 @@
+<footer class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row text-left">
+            <div class="col-xl-3">
+                <ul>
+                    <h5>Formations</h5>
+                    <li><a href="/formation" class=" disabled">Nos formations</a></li>
+                    <li><a href="/composante" class="disabled">Composantes</a></li>
+                    <li><a href="/stuff" class="disabled">Stuffs</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2">
+                <ul>
+                    <h5>Tutoriels</h5>
+                    <li><a href="/modset" class="disabled">Modset</a></li>
+                    <li><a href="/tuto">Nos tutos</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2">
+                <ul>
+                    <h5>Antistasi</h5>
+                    <li><a href="/antistasi" class="disabled">Informations</a></li>
+                    <li><a href="/antistasi/modset" class="disabled">Modset</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <h5>Partenaires</h5>
+                    <li><a href="https://www.polygames.net/" class="disabled">PoLygameS</a></li>
+                    <li><a href="https://arma3.com/" class="disabled">Arma Bohemia</a></li>
+                    <li><a href="https://www.gsri.team/" class="disabled">GSRI</a></li>
+                    <li><a href="https://forum.canardpc.com/threads/96457-Serveur-Arma-3-COOP-CPC-Gr%C3%A8ce-de-Canards-TS-62-210-131-115-RELOADED" class="disabled">GDC</a></li>
+                    <li><a href="/twitch" class="disabled">Twitch</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2 info">
+                <div class="footer-icon">
+                    <h5>Informations</h5>
+                    <a href="ts3server://ts3.Polygames.net?password=alphatest"?port=3306 class="disabled"><i class="fab fa-2x fa-teamspeak"></i></a>
+                    <a href="https://discordapp.com/invite/AmWBzqV" class="disabled"><i class="fab fa-2x fa-discord"></i></a>
+                    <a href="https://www.youtube.com/channel/UCZjaHyQVKI6TquGXwuFfkAw" class="disabled"><i class="fab fa-2x fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/GieMilsim/" class="disabled"><i class="fab fa-2x fa-facebook-square"></i></a>
+                </div>
+                <p>
+                    <small>Site 2019 du GIE by Morbakos, Jack Smith, et Stians.</small>
+                </p>
+            </div>
+        </div>
+        <!-- Message à mettre de Bohemia -->
+        <p class="text-center">
+            <small style="font-size: 12px;">
+                This website is not affiliated or authorized
+                by Bohemia Interactive a.s. Bohemia Interactive, ARMA, DAYZ and all
+                associated logos and designs are trademarks or registered trademarks of
+                Bohemia Interactive a.s.
+            </small>
+        </p>
+    </div>    
+</footer>
