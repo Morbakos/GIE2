@@ -8,8 +8,8 @@
 
         document.addEventListener('scroll', function () {
         window.scrollY >= stickyTop ?
-            sticky.classList.add('fixed') :
-            sticky.classList.remove('fixed');
+            sticky.classList.add('top') :
+            sticky.classList.remove('top');
         });
     }
 </script>

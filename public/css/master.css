@@ -15,6 +15,7 @@ body {
 
 .sticky {
     position: sticky;
+    transition: 1s;
 }
 
 @media (min-width: 992px) {
@@ -41,24 +42,28 @@ body {
 
 @media (min-width: 1200px) {
     .navbar {
-        margin: 5% 10%;
-        padding: 4px 1%;
+        transition: .50s;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
         margin-bottom: 10%;
-    }
-
-    .fixed {
-        position: fixed;
-        transition: .25s;
-        width: 100%;
-        margin: inherit;
         padding: 4px 1%;
     }
 
-    .fixed .center-block {
+    .top {
+        margin: inherit;
+        width: 100%;
+        padding: 4px 1%;
+        position: fixed;
+        transition: none;
+        top: 0;
+    }
+
+    .top .center-block {
         display: none;
     }
 
-    .bg-dark.fixed {
+    .bg-dark.top {
         background-color: rgba(10, 10, 10, 1) !important;
     }
 }
@@ -151,6 +156,12 @@ a:hover, a:active, a:focus {
     color: #fff;
 }
 
-small {
+h1 small {
     font-size: 65%;
+}
+
+.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
 }
