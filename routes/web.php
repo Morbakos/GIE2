@@ -12,10 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
 Route::get('/demo', function () {
     return view('demo');
+});
+
+Route::get('/missions', function () {
+    return view('missions');
 });

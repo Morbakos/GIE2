@@ -1,3 +1,4 @@
+<?php $page=1 ?>
 <!-- on import le template -->
 @extends('layout.mainlayout')
 <!-- on définit le titre de la page -->

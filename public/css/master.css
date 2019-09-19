@@ -34,7 +34,7 @@ body {
         background-color: rgba(111,16,10, 0.6);
         border: none;
     }
-    
+
     .navbar-nav > .active > a:hover, .navbar-dark .navbar-nav .nav-link:hover {
         color: rgb(130,15,11);
     }
@@ -102,6 +102,27 @@ body {
     border-color: rgb(130,15,11);
 }
 
+nav .dropdown-menu {
+    background-color: rgba(10, 10, 10, 0.6) !important;
+}
+
+nav .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-danger.dropdown-toggle:focus {
+    background-color: rgba(111,16,10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
+}
+
+nav .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+    background-color: rgba(111,16,10, 0.6);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus, .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-danger.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(111,16,10, 0.6);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):active, .show>.btn-outline-danger.dropdown-toggle {
+    background-color: rgba(111,16,10, 0.6);
+}
+
 /*-- footer --*/
 .footer {
     position: relative !important;
@@ -128,6 +149,10 @@ footer a {
 
 footer a:hover, footer a:active, footer a:focus {
     color: rgb(130,15,11);
+}
+
+footer i {
+    padding-right: 2%;
 }
 
 /*-- content --*/
@@ -164,4 +189,65 @@ h1 small {
     color: #6c757d;
     pointer-events: none;
     cursor: default;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.page-link {
+    color: rgb(130,15,11);
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(10, 10, 10, 0.6);
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(10, 10, 10, 0.6);
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: rgba(130,15,11, 0.6);
+    border-color: rgba(130,15,11, 0.6);
+}
+
+.card-header {
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.btn-link {
+    color: rgb(130,15,11);
+    text-decoration: none;
+}
+
+.btn-link:hover, .card:hover {
+    color: #fff;
+    background-color: rgba(130,15,11, 0.6);
+    border-color: rgba(130,15,11, 0.6);
+    text-decoration: none;
+}
+
+.btn-link:active, .btn-link:focus {
+    border-color: rgba(130,15,11, 0.6);
+    text-decoration: none;
+}
+
+.card-body:hover {
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.card-body {
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(130,15,11, 0.6);
+}
+
+.card {
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(130,15,11, 0.6);
+}
+
+.border-on {
+    border: 1px solid rgba(130,15,11, 0.6);
 }
