@@ -29,7 +29,7 @@
                     <li><a href="https://www.polygames.net/">PoLygameS</a></li>
                     <li><a href="https://arma3.com/">Arma Bohemia</a></li>
                     <li><a href="https://www.gsri.team/">GSRI</a></li>
-                    <li><a href="https://forum.canardpc.com/threads/96457-Serveur-Arma-3-COOP-CPC-Gr%C3%A8ce-de-Canards-TS-62-210-131-115-RELOADED">GDC</a></li>
+                    <li><a href="https://grecedecanards.fr/">GDC</a></li>
                     <li class="disabled"><a href="/twitch">Twitch</a></li>
                 </ul>
             </div>

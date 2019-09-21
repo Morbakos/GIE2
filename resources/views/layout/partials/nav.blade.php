@@ -4,7 +4,7 @@
   </button>
   
   <a class="navbar-brand" href="/">
-    <img alt="Logo du GIE" src="img/logo.png" width="30" height="30">
+    <img alt="Logo du GIE" src="/img/logo.png" width="30" height="30">
   </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,7 +39,7 @@
       </ul>
       @if (!Auth::guest())
         <div class="dropdown <?php if ($page == "9") {echo 'active';}?>">
-          <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Pseudo
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -53,7 +53,7 @@
         </div>
       @else
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
           <i class="fas fa-sign-in-alt"></i>Connexion</button>
         </button>
       @endif

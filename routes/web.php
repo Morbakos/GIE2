@@ -15,11 +15,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-
 Route::get('/demo', function () {
     return view('demo');
 });
 
 Route::get('/missions', function () {
-    return view('missions');
+    return view('mission/missions');
+});
+
+Route::get('/missions', function () {
+    return view('mission/missions');
+});
+
+Route::get('missions/edit/{n}', function () {
+    return view('mission/editmission');
 });

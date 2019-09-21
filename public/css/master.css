@@ -35,8 +35,13 @@ body {
         border: none;
     }
 
-    .navbar-nav > .active > a:hover, .navbar-dark .navbar-nav .nav-link:hover {
+    .navbar-dark .navbar-nav .nav-link:hover {
         color: rgb(130,15,11);
+    }
+
+    .navbar-nav > .active > a:hover {
+        color: #fff !important;
+        background-color: rgb(130,15,11) !important;
     }
 }
 
@@ -250,4 +255,20 @@ h1 small {
 
 .border-on {
     border: 1px solid rgba(130,15,11, 0.6);
+}
+
+.btn-danger {
+    color: #fff;
+    border-color: rgb(130,15,11);
+    background-color: rgb(130,15,11);
+}
+
+.btn-danger:hover {
+    color: #fff;
+    border-color: rgb(130,15,11);
+    background-color: rgba(111,16,10, 0.6);
+}
+
+.text-danger {
+    color: rgb(130,15,11) !important;
 }
