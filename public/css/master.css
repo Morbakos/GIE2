@@ -158,6 +158,16 @@ nav .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
     border-top: 1px solid rgb(111,16,10);
 }
 
+.show>.btn-danger.dropdown-toggle {
+    background-color: rgba(111,16,10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
+}
+
+.show>.btn-danger {
+    background-color: rgba(111,16,10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
+}
+
 /*-- footer --*/
 .footer {
     position: relative !important;
@@ -169,8 +179,6 @@ nav .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
 }
 
 footer .container {
-    padding-left: 0;
-    padding-right: 0;
     padding-bottom: 1px;
 }
 
@@ -203,6 +211,11 @@ footer i {
 @media (min-width: 992px) {
     section.container {
         padding: 0;
+    }
+
+    footer .container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -301,4 +314,8 @@ h1 small {
 
 .text-danger {
     color: rgb(130,15,11) !important;
+}
+
+#milsim.form-control:focus, #antistasi.form-control:focus {
+    background-color: rgba(111,16,10, 0.6);
 }

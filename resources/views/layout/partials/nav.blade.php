@@ -46,7 +46,7 @@
             <a class="dropdown-item disabled" href="#"><i class="fas fa-user"></i> Profil</a>
             <a class="dropdown-item disabled" href="#"><i class="fas fa-book"></i> Mes tutos</a>
             <a class="dropdown-item disabled" href="#"><i class="fas fa-list"></i> Missions jouées</a>
-            <a class="dropdown-item disabled" href="#"><i class="fas fa-server"></i> Administration serveur</a>
+            <a class="dropdown-item text-light" href="/serve"><i class="fas fa-server"></i> Administration serveur</a>
             <a role="separator" class="divider"></a>
             <a class="dropdown-item text-light" href="#"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
           </div>

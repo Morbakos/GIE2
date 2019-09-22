@@ -30,3 +30,7 @@ Route::get('/missions', function () {
 Route::get('missions/edit/{n}', function () {
     return view('mission/editmission');
 });
+
+Route::get('serve', function () {
+    return view('serve');
+});

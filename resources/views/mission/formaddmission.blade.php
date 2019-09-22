@@ -268,37 +268,31 @@
                             Entrer le type de mort (respawn ou définitif).
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Troupes alliés</label>
-                                <div class="hidden text-dark">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Item1</li>
-                                    </ul>
-                                </div><br>
-                                <div class="input-group mb-3">
-                                    <input type="name" class="form-control" placeholder="Entrer une faction" aria-label="Entrer une faction" aria-describedby="button-addon2" required="false">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-success" type="button" id="button-addon2"><i class="fas fa-plus"></i> Ajouter</button>
-                                    </div>
-                                </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Troupes alliés</label>
+                        <div class="hidden text-dark">
+                            <ul class="list-group">
+                                <li class="list-group-item">Item1</li>
+                            </ul>
+                        </div><br>
+                        <div class="input-group mb-3">
+                            <input type="name" class="form-control" placeholder="Entrer une faction" aria-label="Entrer une faction" aria-describedby="button-addon2" required="false">
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="button" id="button-addon2"><i class="fas fa-plus"></i> Ajouter</button>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Troupes ennemies</label>
-                                <div class="hidden text-dark">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Item1</li>
-                                    </ul>
-                                </div><br>
-                                <div class="input-group mb-3">
-                                    <input type="name" class="form-control" placeholder="Entrer une faction" aria-label="Entrer une faction" aria-describedby="button-addon3" required="false">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-success" type="button" id="button-addon2"><i class="fas fa-plus"></i> Ajouter</button>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Troupes ennemies</label>
+                        <div class="hidden text-dark">
+                            <ul class="list-group">
+                                <li class="list-group-item">Item1</li>
+                            </ul>
+                        </div><br>
+                        <div class="input-group mb-3">
+                            <input type="name" class="form-control" placeholder="Entrer une faction" aria-label="Entrer une faction" aria-describedby="button-addon3" required="false">
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="button" id="button-addon2"><i class="fas fa-plus"></i> Ajouter</button>
                             </div>
                         </div>
                     </div>
