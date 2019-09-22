@@ -60,3 +60,4 @@
     </form>
   </div>
 </nav>
+@include('login')

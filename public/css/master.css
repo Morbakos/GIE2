@@ -128,6 +128,36 @@ nav .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
     background-color: rgba(111,16,10, 0.6);
 }
 
+.close {
+    color: #fff;
+}
+
+.close:hover {
+    color: rgb(111,16,10);
+    text-shadow: 0 1px 0 rgb(111, 16, 10);
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.modal-content.bg-dark {
+    background-color: rgba(10, 10, 10, 0.9) !important;
+}
+
+.modal-content {
+    border: 1px solid rgb(111,16,10);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgb(111,16,10);
+}
+
+.modal-footer {
+    border-top: 1px solid rgb(111,16,10);
+}
+
 /*-- footer --*/
 .footer {
     position: relative !important;
