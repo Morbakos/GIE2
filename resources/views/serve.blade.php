@@ -1,10 +1,11 @@
-<?php $page = 1 ?>
+<?php $page = 0 ?>
 <!-- on import le template -->
 @extends('layout.mainlayout')
 <!-- on définit le titre de la page -->
 @section('title', 'Accueil')
 <!-- on définit le contenu de la page -->
 @section('content')
+    @if (!Auth::guest())
     <section class="container">
         <div class="container bg-dark text-light">
             <h1>Gestion du serveur</h1>
@@ -12,7 +13,7 @@
             <div class="container">
                 <form>
                     <div class="form-group">
-                        <label for="milsimFormControlInput1">Éteindre le serveur <b>MILSIM</b></label>
+                        <label for="milsimFormControlInput1"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur <b>MILSIM</b> <i class="fas fa-exclamation-triangle text-warning"></i></label>
                         <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#milsimModal" id="milsim">Éteindre le serveur MILSIM</button>
                     </div>
                 </form>
@@ -20,11 +21,23 @@
             <div class="container" style="border-top: 1px solid rgb(130,15,11);">
                 <form>
                     <div class="form-group">
-                        <label for="milsimFormControlInput1">Éteindre le serveur <b>ANTISTASI</b></label>
+                        <label for="milsimFormControlInput1"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur <b>ANTISTASI</b> <i class="fas fa-exclamation-triangle text-warning"></i></label>
                         <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#antistasiModal" id="antistasi">Éteindre le serveur ANTISTASI</button>
                     </div>
                 </form>
             </div>
+        </div>
+    </section>
+    @else
+    <section class="container">
+        <div class="container bg-dark text-light">
+            <h1>Vous n'êtes pas autorisés à accéder à cette partie du site. <small><b>Vous devez d'abord vous connecter.</b></small></h1>
+        </div>
+    </section>
+    @endif
+    <section class="container">
+        <div class="container bg-dark text-light">
+            <a href="/" class="btn btn-danger"><i class="fas fa-home"></i> Accueil</a>
         </div>
     </section>
 @endsection
@@ -34,7 +47,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content bg-dark text-light">
             <div class="modal-header">
-                <h5 class="modal-title" id="milsimModalLabel">Veux tu vraiment éteindre le serveur MILSIM ?</h5>
+                <h5 class="modal-title" id="milsimModalLabel"><i class="fas fa-exclamation-triangle text-warning"></i> Veux tu vraiment éteindre le serveur MILSIM ? <i class="fas fa-exclamation-triangle text-warning"></i></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -51,7 +64,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content bg-dark text-light">
             <div class="modal-header">
-                <h5 class="modal-title" id="antistasiModalLabel">Veux tu vraiment éteindre le serveur ANTISTASI ?</h5>
+                <h5 class="modal-title" id="antistasiModalLabel"><i class="fas fa-exclamation-triangle text-warning"></i> Veux tu vraiment éteindre le serveur ANTISTASI ? <i class="fas fa-exclamation-triangle text-warning"></i></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>

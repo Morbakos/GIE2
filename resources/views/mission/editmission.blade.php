@@ -18,10 +18,10 @@
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Dernière fois jouées</label>
+                <label for="exampleFormControlInput1">Dernière fois jouée</label>
                 <input type="date" class="form-control" id="exampleFormControlInput1" required>
                 <div class="invalid-feedback">
-                    Entrer la date de la dernière fois jouées.
+                    Entrer la date de la dernière fois jouée.
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
                 <label for="exampleFormControlInput1">Lien débrief</label>
                 <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="Entrer un lien" required>
                 <div class="invalid-feedback">
-                    Entrer le lien du débrief de la dernière fois jouées.
+                    Entrer le lien du débrief de la dernière fois jouée.
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                 <label for="exampleFormControlInput1">Lien feuille de rôle</label>
                 <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="Entrer un lien" required>
                 <div class="invalid-feedback">
-                    Entrer le lien de la feuille de rôle de la dernière fois jouées.
+                    Entrer le lien de la feuille de rôle de la dernière fois jouée.
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
     <section class="container">
         <div class="container bg-dark text-light">
             @if (Auth::guest())
-                <h1>Vous n'êtes pas autoriser à accéder à cette partie du site. <small><b>Vous devez d'abord vous connecter.</b></small></h1>
+                <h1>Vous n'êtes pas autorisés à accéder à cette partie du site. <small><b>Vous devez d'abord vous connecter.</b></small></h1>
             @endif
         </div>
     </section>

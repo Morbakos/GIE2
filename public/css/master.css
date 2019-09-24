@@ -168,6 +168,10 @@ nav .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
     border-color: rgba(111,16,10, 0.6);
 }
 
+nav .collapse {
+    border-bottom: none;
+}
+
 /*-- footer --*/
 .footer {
     position: relative !important;
@@ -208,6 +212,14 @@ footer i {
     padding: 5%;
 }
 
+.border-on {
+    padding: 4%;
+}
+
+.col-4.border-on {
+    margin-right: 10%;
+}
+
 @media (min-width: 992px) {
     section.container {
         padding: 0;
@@ -216,6 +228,15 @@ footer i {
     footer .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .border-on {
+        border: 1px solid rgba(130,15,11, 0.6);
+        padding: 2% !important;
+    }
+
+    .col-4.border-on {
+        margin-right: 0;
     }
 }
 
@@ -261,9 +282,6 @@ h1 small {
     border-color: rgba(130,15,11, 0.6);
 }
 
-.card-header {
-    background-color: rgba(10, 10, 10, 0.6);
-}
 
 .btn-link {
     color: rgb(130,15,11);
@@ -296,8 +314,9 @@ h1 small {
     border-color: rgba(130,15,11, 0.6);
 }
 
-.border-on {
-    border: 1px solid rgba(130,15,11, 0.6);
+.card-header:hover{
+    
+    color: #ccc !important;
 }
 
 .btn-danger {
@@ -318,4 +337,61 @@ h1 small {
 
 #milsim.form-control:focus, #antistasi.form-control:focus {
     background-color: rgba(111,16,10, 0.6);
+}
+
+a.list-group-item-action{
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
+}
+
+a.list-group-item-action:focus, a.list-group-item-action:hover {
+    background-color: rgba(111,16,10, 0.6);
+    color: #fff !important;
+}
+
+samp {
+    font-size: 1.3rem;
+}
+
+pre {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+details {
+    margin: 10px 0;
+}
+
+.tuto li {
+    list-style-type: inherit;
+}
+
+.text-muted a.btn:hover {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.text-muted .btn-outline-danger {
+    color: #ccc;
+}
+
+.collapse {
+    border-bottom: 1px solid #ccc;
+}
+
+.invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    box-shadow: 0 0 0 0.2rem rgba(111,16,10, 0.6);
+}
+
+.valid {
+    border-color: transparent;
+    padding-right: calc(1.5em + .75rem);
+    box-shadow: 0 0 0 0.2rem rgba(111,16,10, 0.6);
 }
