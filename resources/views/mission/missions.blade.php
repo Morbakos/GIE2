@@ -16,158 +16,216 @@
                 <nav aria-label="Page navigation missions">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
                         <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
                         <li class="page-item disabled">
-                            <a class="page-link" href="#">Next</a>
+                            <a class="page-link" href="#">Suivant</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <!-- @ foreach ($missions as $mission) -->
-            <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <div class="row" style="text-transform: capitalize;">
-                                    <div class="col">
-                                        Nom_mission
-                                    </div> 
-                                    <div class="col">
-                                        Nombre_joueurs
-                                    </div>
-                                    <div class="col">
-                                        Carte
-                                    </div>
-                                    <div class="col">
-                                        Type
-                                    </div>
-                                    <div class="col">
-                                        Objectif
-                                    </div>
-                                    <div class="col">
-                                        Ennemies
-                                    </div>
-                                    <div class="col">
-                                        Last_try
-                                    </div>
-                                    <div class="col">
-                                        <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                                    </div>
-                                </div>
-                            </button>
-                        </h5>
-                    </div>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                <div class="container">
-                    <div class="row border-on">
-                        <div class="col- border-on">
-                            <img src="img/src" alt="image de la mission" width="200" height="200">
+            </div>         
+            <div class="container"> 
+                <div class="accordion" id="accordionExample">
+                    <!-- @ foreach ($missions as $mission) -->
+                    <div class="card">
+                        <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <div class="mb-0 text-left row">
+                            <div class="col-6 col-md-4">Raid Explosif</div>
+                            <div class="col-6 col-md-1">40 joueurs</div>
+                            <div class="col-6 col-md-2">Altis</div>
+                            <div class="col-6 col-md-2">Attaque</div>
+                            <div class="col-6 col-md-1">Russes</div>
+                            <div class="col-6 col-md-0">10/10/10</div>
+                            <div class="col-6 col-md-0"><i class="fas fa-check text-success"></i></div>
                         </div>
-                        <div class="col border-on">
-                            <p>
-                                <b>Background : </b><br>
-                            </p>
-                            <p>
-                                <b>Mission : </b><br>
-                            </p>
-                            <p>
-                                <b>Renseignements : </b><br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row border-on">
-                        <div class="col border-on">
-                            <b>BY </b><span style="text-transform: uppercase;">pseudo</span>
-                            <b>LE </b><span>date</span>
-                        </div>
-                        <div class="col border-on">
-                            <b>H.DÉPART : </b><span style="text-transform: lowercase;">heure</span>
-                        </div>
-                        <div class="col border-on">
-                            <span style="text-transform: uppercase;">mort?</span>
-                        </div>
-                        <div class="col border-on">
-                            <b>MÉTÉO : </b><span style="text-transform: lowercase;">temps</span>
-                        </div>
-                        <div class="col border-on">
-                            <b>STUFF : </b><span style="text-transform: lowercase;">intégré?</span>
-                        </div>
-                    </div>
-                    <div class="row border-on">
-                        <div class="col border-on">
-                            <div class="row">
-                                <div class="col">
-                                    <b>TROUPES : </b><span style="text-transform: uppercase;">troupes</span>
-                                </div>
-                                <div class="col">
-                                    <b>OBJECTIFS :</b>
-                                    <span style="text-transform: uppercase;">
-                                        <ul style="list-style-type: none;">
-                                            <li>objectif1</li>
-                                            <li>objectif2</li>
-                                        </ul>
-                                    </span>
+                        </a>
+                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!-- @ if (!Auth::guest()) -->
+                            <div class="mb-0 text-center row">
+                                <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
+                                <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
+                            </div><br>
+                            <!-- @ endif --> 
+                            <div class="mb-0 text-left row">
+                                <img src="/img/info/3.jpg" alt="" width="300" height="200">
+                                <div class="col-2 col-md-8">
+                                    <p><b>Background : </b>
+                                        L'armée Russe réalise des essais de nouveaux missiles dans le nord d'Altis.
+                                        Nous avons appris que la ville de Syrta leur servait de base avancée pour ces
+                                        oppérations. Nous allons les faire cesser dans les plus brefs délais !
+                                    </p>
+                                    <p><b>Mission : </b>
+                                        D'après nos sources, 4 missiles sont actuellement entreposés près de Syrta.
+                                        Lancez un assaut sur la cité et détruisez ces 4 ogives. Profitez en pour porter
+                                        un coup aux troupes sur place qui gardent la ville. Et n'hésitez pas à faire des
+                                        prisonniers si l'occasion se présente. Une fois les 4 missiles détruits, retournez
+                                        à votre camp de base sur le stade.
+                                    </p>
+                                    <p><b>Renseignements : </b>
+                                        La ville est principalement gardée par de l'infanterie. Nos sources fibt état de 
+                                        seulement quelques UAZ en patrouille sur les routes, et de quelques URAL sur zone.
+                                        Aucun blindé n'est à signaler, les Russes n'ont visiblement pas jugé utile d'en
+                                        faire venir sur l'île. En revanche, nous n'avons que peu d'informations sur leurs 
+                                        capacités aériennes. Les Russes se sont largement déployés dans le nord du pays, 
+                                        seuls les alentours de Kavala sont encore sous notre contrôle.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col border-on">
-                            <b>VÉHICULES :</b>
-                            <span style="text-transform: uppercase;">
-                                <ul style="list-style-type: none;">
-                                    <li>véhicule1</li>
-                                    <li>véhicule2</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="col-5 border-on" style="padding: 0; border-top: none;">
-                            <div class="col border-on">
-                                <b>TERRAIN : </b><span style="text-transform: uppercase;">terrain1, terrain2</span>
+                            <div class="mb-0 text-left row">
+                                <div class="col-6 col-md-2"><b>Par : </b>Mystery</div>
+                                <div class="col-6 col-md-2"><b>Départ : </b>21h00</div>
+                                <div class="col-6 col-md-2"><b>Mort : </b>définitive</div>
+                                <div class="col-6 col-md-3"><b>Météo : </b>soleil - pluie</div>
+                                <div class="col-6 col-md-3"><b>Stuff : </b>intégré - woodland</div>
                             </div>
-                            <div class="col border-on" style="border-bottom: none;">
-                                <b>AUTRES INFOS // CORRECTIONS</b>
-                                <span style="text-transform: uppercase;">
-                                    <ul style="list-style-type: none;">
-                                        <li>info1</li>
-                                        <li>correctif1</li>
-                                        <li>info1</li>
-                                        <li>correctif1</li>
-                                        <li>info1</li>
-                                        <li>correctif1</li>
-                                        <li>info1</li>
-                                        <li>correctif1</li>
-                                        <li>info1</li>
-                                        <li>correctif1</li>
+                            <div class="mb-0 text-left row">
+                                <div class="col-6 col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><b>Troupes : </b>Charlie</li>
+                                        <li class="list-group-item"><b>Objectifs : </b>
+                                            <ul>
+                                                <li>détruire objectif</li>
+                                                <li>récupérer infos</li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </span>
+                                </div>
+                                <div class="col-6 col-md-4"><b>Véhicules : </b>
+                                    <ul>
+                                        <li>4x Humvee N/A (4P)</li>
+                                        <li>4x Humvee N/A (8P)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-5">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><b>Terrains : </b>
+                                            <ul>
+                                                <li>ville</li>
+                                                <li>campagne</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item"><b>Autres Infos // Corrections : </b>
+                                            <p>
+
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-0 text-left row">
+                                <div class="col-6 col-md-4"><b>Dernier try : </b>12/12/12</div>
+                                <div class="col-6 col-md-3"><b>Leader : </b>LeDoc</div>
+                                <div class="col-6 col-md-2"><b>Statut : </b><span class="text-danger"> échec</span></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row border-on">
-                        <div class="col-3 border-on">
-                            <b>LAST TRY : </b><span style="text-transform: lowercase;">date</span>
-                        </div>
-                        <div class="col-3 border-on">
-                            <b>LEAD BY : </b><span style="text-transform: uppercase;">pseudo SL</span>
-                        </div>
-                        <div class="col-1 border-on">
-                            <span style="text-transform: uppercase; color:green;">réussi</span>
-                        </div>
-                        <div class="col-5 border-on">
-                            <a href="">EDITER</a> - <a href="">FEUILLE DE RÔLE</a> - <a href="">DEBRIEF</a>
                         </div>
                     </div>
-                </div>
-                </div>
+                    <!-- @ endforeach -->
+                    <!-- @ foreach ($missions as $mission) -->
+                    <div class="card">
+                            <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <div class="mb-0 text-left row">
+                                <div class="col-6 col-md-4">Opération Grenouille</div>
+                                <div class="col-6 col-md-1">30 joueurs</div>
+                                <div class="col-6 col-md-2">Utes</div>
+                                <div class="col-6 col-md-2">November</div>
+                                <div class="col-6 col-md-1">Russes</div>
+                                <div class="col-6 col-md-0">10/10/10</div>
+                                <div class="col-6 col-md-0"><i class="fas fa-times text-danger"></i></div>
+                            </div>
+                            </a>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!-- @ if (!Auth::guest()) -->
+                                <div class="mb-0 text-center row">
+                                    <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
+                                    <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
+                                </div><br>
+                                <!-- @ endif --> 
+                                <div class="mb-0 text-left row">
+                                    <img src="/img/info/4.jpg" alt="" width="300" height="200">
+                                    <div class="col-2 col-md-8">
+                                        <p><b>Background : </b>
+                                            L'armée Russe réalise des essais de nouveaux missiles dans le nord d'Altis.
+                                            Nous avons appris que la ville de Syrta leur servait de base avancée pour ces
+                                            oppérations. Nous allons les faire cesser dans les plus brefs délais !
+                                        </p>
+                                        <p><b>Mission : </b>
+                                            D'après nos sources, 4 missiles sont actuellement entreposés près de Syrta.
+                                            Lancez un assaut sur la cité et détruisez ces 4 ogives. Profitez en pour porter
+                                            un coup aux troupes sur place qui gardent la ville. Et n'hésitez pas à faire des
+                                            prisonniers si l'occasion se présente. Une fois les 4 missiles détruits, retournez
+                                            à votre camp de base sur le stade.
+                                        </p>
+                                        <p><b>Renseignements : </b>
+                                            La ville est principalement gardée par de l'infanterie. Nos sources fibt état de 
+                                            seulement quelques UAZ en patrouille sur les routes, et de quelques URAL sur zone.
+                                            Aucun blindé n'est à signaler, les Russes n'ont visiblement pas jugé utile d'en
+                                            faire venir sur l'île. En revanche, nous n'avons que peu d'informations sur leurs 
+                                            capacités aériennes. Les Russes se sont largement déployés dans le nord du pays, 
+                                            seuls les alentours de Kavala sont encore sous notre contrôle.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-0 text-left row">
+                                    <div class="col-6 col-md-2"><b>Par : </b>Mystery</div>
+                                    <div class="col-6 col-md-2"><b>Départ : </b>21h00</div>
+                                    <div class="col-6 col-md-2"><b>Mort : </b>définitive</div>
+                                    <div class="col-6 col-md-3"><b>Météo : </b>soleil - pluie</div>
+                                    <div class="col-6 col-md-3"><b>Stuff : </b>intégré - woodland</div>
+                                </div>
+                                <div class="mb-0 text-left row">
+                                    <div class="col-6 col-md-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><b>Troupes : </b>Charlie</li>
+                                            <li class="list-group-item"><b>Objectifs : </b>
+                                                <ul>
+                                                    <li>détruire objectif</li>
+                                                    <li>récupérer infos</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><b>Véhicules : </b>
+                                                <ul>
+                                                    <li>4x Humvee N/A (4P)</li>
+                                                    <li>4x Humvee N/A (8P)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-md-5">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><b>Terrains : </b>
+                                                <ul>
+                                                    <li>ville</li>
+                                                    <li>campagne</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item"><b>Autres Infos // Corrections : </b>
+                                                <p>
+    
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mb-0 text-left row">
+                                    <div class="col-6 col-md-4"><b>Dernier try : </b>12/12/12</div>
+                                    <div class="col-6 col-md-3"><b>Leader : </b>LeDoc</div>
+                                    <div class="col-6 col-md-2"><b>Statut : </b><span class="text-danger"> échec</span></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- @ endforeach -->
                 </div>
             </div>
-            <!-- @ endforeach -->
-        </div>
     </section>
 @endsection

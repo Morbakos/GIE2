@@ -82,14 +82,10 @@
 @section('content')
     <section class="container">
         <div class="container bg-dark text-light">
-            @if (Auth::guest())
+            <!--@if (!Auth::guest())-->
                 <h1>Vous n'êtes pas autorisés à accéder à cette partie du site. <small><b>Vous devez d'abord vous connecter.</b></small></h1>
-            @endif
-        </div>
-    </section>
-    <section class="container">
-        <div class="container bg-dark text-light">
-            <a href="/missions" class="btn btn-danger"><i class="fas fa-undo-alt"></i> Retour</a>
+            <!--@endif-->
+        <a href="/missions" class="btn btn-danger"><i class="fas fa-undo-alt"></i> Retour</a>
         </div>
     </section>
 @endsection

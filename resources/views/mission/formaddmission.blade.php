@@ -89,8 +89,8 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="timeFormControlInput">Heure de départ</label>
-                                <input type="time" class="form-control" id="timeFormControlInput" value="21:00" required>
+                                <label for="timeFormControlInput">Heure de départ in-game</label>
+                                <input type="time" class="form-control" id="timeFormControlInput" required>
                                 <div class="invalid-feedback">
                                     Entrer l'heure de départ de la mission.
                                 </div>
@@ -275,7 +275,7 @@
                         <option value="détruire communication">Détruire communication</option>
                         <option value="détruire intel">Détruire intel</option>
                         <option value="détruire objectif">Détruire objectif</option>
-                        <option value="récupérer">Récupérer infos/doc</option>
+                        <option value="récupérer infos">Récupérer infos/doc</option>
                         <option value="récupérer objets">Récupérer objets</option>
                         <option value="pirater intel">Pirater intel</option>
                         <option value="capturer zone">Capturer zone</option>
@@ -314,7 +314,7 @@
                             <option value="détruire communication">Détruire communication</option>
                             <option value="détruire intel">Détruire intel</option>
                             <option value="détruire objectif">Détruire objectif</option>
-                            <option value="récupérer">Récupérer infos/doc</option>
+                            <option value="récupérer infos">Récupérer infos/doc</option>
                             <option value="récupérer objets">Récupérer objets</option>
                             <option value="pirater intel">Pirater intel</option>
                             <option value="capturer zone">Capturer zone</option>

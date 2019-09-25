@@ -199,7 +199,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 footer i {
-    padding-right: 2%;
+    padding-right: 6px;
 }
 
 /*-- content --*/
@@ -237,6 +237,34 @@ footer i {
 
     .col-4.border-on {
         margin-right: 0;
+    }
+
+    .col-6 {
+        font-size: 16px;
+    }
+
+    .col-md-0, .col-md-1, .col-md-2, .col-md-4 {
+        padding-right: 0;
+    }
+
+    .col-md-4 {
+        flex: 0 0 27%;
+        max-width: 27%;
+    }
+
+    .col-md-2 {
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+
+    .col-md-1 {
+        flex: 0 0 12%;
+        max-width: 12%;
+    }
+
+    .col-md-0 {
+        flex: 0 0 8%;
+        max-width: 9%;
     }
 }
 
@@ -349,6 +377,11 @@ a.list-group-item-action:focus, a.list-group-item-action:hover {
     color: #fff !important;
 }
 
+li.list-group-item{
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
+}
+
 samp {
     font-size: 1.3rem;
 }
@@ -394,4 +427,9 @@ details {
     border-color: transparent;
     padding-right: calc(1.5em + .75rem);
     box-shadow: 0 0 0 0.2rem rgba(111,16,10, 0.6);
+}
+
+.list-group-flush .list-group-item {
+    background-color: transparent;
+    border-color: #333;
 }
