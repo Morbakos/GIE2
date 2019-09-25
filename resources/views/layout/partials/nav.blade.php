@@ -37,7 +37,7 @@
               <a class="nav-link disabled" href="#">Contact</a>
           </li>
       </ul>
-      @if (!Auth::guest())
+      <!--@ if (!Auth::guest())-->
         <div class="dropdown <?php if ($page == "9") {echo 'active';}?>">
           <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Pseudo
@@ -51,12 +51,12 @@
             <a class="dropdown-item text-light" href="#"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
           </div>
         </div>
-      @else
+      <!--@ else-->
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
           <i class="fas fa-sign-in-alt"></i>Connexion</button>
         </button>
-      @endif
+      <!--@ endif-->
     </form>
   </div>
 </nav>

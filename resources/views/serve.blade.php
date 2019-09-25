@@ -5,7 +5,7 @@
 @section('title', 'Accueil')
 <!-- on définit le contenu de la page -->
 @section('content')
-    @if (!Auth::guest())
+    <!--@ if (!Auth::guest())-->
     <section class="container">
         <div class="container bg-dark text-light">
             <h1>Gestion du serveur</h1>
@@ -28,13 +28,13 @@
             </div>
         </div>
     </section>
-    @else
+    <!--@ else-->
     <section class="container">
         <div class="container bg-dark text-light">
             <h1>Vous n'êtes pas autorisés à accéder à cette partie du site. <small><b>Vous devez d'abord vous connecter.</b></small></h1>
         </div>
     </section>
-    @endif
+    <!--@ endif-->
     <section class="container">
         <div class="container bg-dark text-light">
             <a href="/" class="btn btn-danger"><i class="fas fa-home"></i> Accueil</a>
