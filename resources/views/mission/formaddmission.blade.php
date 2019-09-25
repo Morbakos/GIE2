@@ -2,10 +2,10 @@
 <!-- @ if (!Auth::guest()) -->
 <section class="container">
     <div class="container bg-dark text-light">
-        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseAddMission" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseAdd" aria-expanded="false" aria-controls="collapseAdd">
             <i class="fas fa-plus"></i> @yield('sectiontitle') 
         </button>
-        <div class="collapse" id="collapseAddMission">
+        <div class="collapse" id="collapseAdd">
             <h1 style="padding-top: 10%;">@yield('sectiontitle')</h1><br>
                 <form  class="needs-validation" novalidate>
                     <div class="row">

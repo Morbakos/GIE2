@@ -413,10 +413,6 @@ details {
     color: #ccc;
 }
 
-.collapse {
-    border-bottom: 1px solid #ccc;
-}
-
 .invalid {
     border-color: #dc3545;
     padding-right: calc(1.5em + .75rem);
@@ -432,4 +428,8 @@ details {
 .list-group-flush .list-group-item {
     background-color: transparent;
     border-color: #333;
+}
+
+#collapseAdd.collapse {
+    border-bottom: 1px solid #ccc;
 }
