@@ -1,5 +1,6 @@
 <script src="/js/jquery-3.4.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/clipboard.js"></script>
 <script>
     var sticky = document.querySelector('.sticky');
 
@@ -12,4 +13,13 @@
             sticky.classList.remove('top');
         });
     }
+
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
 </script>

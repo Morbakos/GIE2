@@ -23,12 +23,16 @@ Route::get('/missions', function () {
     return view('mission/missions');
 });
 
-Route::get('/missions', function () {
-    return view('mission/missions');
+Route::get('/missions/edit/{n}', function () {
+    return view('mission/editmission');
 });
 
-Route::get('missions/edit/{n}', function () {
-    return view('mission/editmission');
+Route::get('/tutos', function () {
+    return view('tuto/tutos');
+});
+
+Route::get('/tutos/{n}', function () {
+    return view('tuto/viewtutos');
 });
 
 Route::get('serve', function () {
