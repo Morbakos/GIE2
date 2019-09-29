@@ -94,10 +94,14 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-6 col-md-4"><b>Véhicules : </b>
-                                    <ul>
-                                        <li>4x Humvee N/A (4P)</li>
-                                        <li>4x Humvee N/A (8P)</li>
+                                <div class="col-6 col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><b>Véhicules : </b>
+                                            <ul>
+                                                <li>4x Humvee N/A (4P)</li>
+                                                <li>4x Humvee N/A (8P)</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-6 col-md-5">

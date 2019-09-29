@@ -318,8 +318,8 @@ h1 small {
 
 .btn-link:hover, .card:hover {
     color: #fff;
-    background-color: rgba(130,15,11, 0.6);
-    border-color: rgba(130,15,11, 0.6);
+    background-color: rgba(111,16,10, 0.6);
+    border-color: rgba(111,16,10, 0.6);
     text-decoration: none;
 }
 
@@ -432,4 +432,8 @@ details {
 
 #collapseAdd.collapse {
     border-bottom: 1px solid #ccc;
+}
+
+a:not([href]):not([tabindex]):hover {
+    cursor: pointer;
 }

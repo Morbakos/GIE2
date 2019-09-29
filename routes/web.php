@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('buildinfo');
 });
 
 Route::get('/demo', function () {

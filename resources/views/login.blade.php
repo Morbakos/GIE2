@@ -21,7 +21,7 @@
                     </div>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer une adresse mail" required>
                     <div class="invalid-feedback">
-                      Adresse mail inconnu.
+                      Adresse mail inconnue.
                     </div>
                   </div>
                 </div>

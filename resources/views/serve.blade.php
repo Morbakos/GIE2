@@ -9,20 +9,20 @@
     <section class="container">
         <div class="container bg-dark text-light">
             <h1>Gestion du serveur</h1>
-            <span class="text-muted">Veuillez vérifier à ce qu'aucun utilisateur ne soit en jeu avant d'éteindre un serveur. Sinon ce dernier sera déconnecté.</span>
+            <span class="text-muted"><b>Veuillez vérifier qu'aucun joueur n'est en jeu</b> avant d'éteindre un serveur, sinon ce dernier sera déconnecté.</span>
             <div class="container">
                 <form>
                     <div class="form-group">
-                        <label for="milsimFormControlInput1"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur <b>MILSIM</b> <i class="fas fa-exclamation-triangle text-warning"></i></label>
-                        <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#milsimModal" id="milsim">Éteindre le serveur MILSIM</button>
+                        <label for="milsimFormControlInput1">Éteindre le serveur <b>MILSIM</b></label>
+                        <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#milsimModal" id="milsim"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur MILSIM <i class="fas fa-exclamation-triangle text-warning"></i></button>
                     </div>
                 </form>
             </div>
             <div class="container" style="border-top: 1px solid rgb(130,15,11);">
                 <form>
                     <div class="form-group">
-                        <label for="milsimFormControlInput1"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur <b>ANTISTASI</b> <i class="fas fa-exclamation-triangle text-warning"></i></label>
-                        <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#antistasiModal" id="antistasi">Éteindre le serveur ANTISTASI</button>
+                        <label for="milsimFormControlInput1">Éteindre le serveur <b>ANTISTASI</b></label>
+                        <button type="button" class="form-control btn btn-danger" data-toggle="modal" data-target="#antistasiModal" id="antistasi"><i class="fas fa-exclamation-triangle text-warning"></i> Éteindre le serveur ANTISTASI <i class="fas fa-exclamation-triangle text-warning"></i></button>
                     </div>
                 </form>
             </div>
