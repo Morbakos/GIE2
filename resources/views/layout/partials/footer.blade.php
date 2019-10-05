@@ -1,4 +1,19 @@
 <footer class="footer bg-dark text-light">
+    <div class="text-center">
+        <p>
+            <a class="btn btn-outline-danger" data-toggle="collapse" href="#collapseHelp" role="button" aria-expanded="false" aria-controls="collapseHelp">
+                <i class="fas fa-question"></i>
+            </a>
+        </p>
+        <div class="collapse" id="collapseHelp">
+            <div class="card card-body">
+                <p class="text-muted">
+                    Vous rencontrez un problème ? Merci de le signaler <!--@ if (!Auth::guest())--><a href="https://github.com/Morbakos/GIE2/issues/new?assignees=&labels=bug&template=signaler-un-bug.md&title=">ici</a> ou<!--@ endif--> sur le <a href="https://discordapp.com/invite/AmWBzqV">Discord</a> en mentionnant <span class="discord-site">@Site</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row text-left">
             <div class="col-xl-3">
