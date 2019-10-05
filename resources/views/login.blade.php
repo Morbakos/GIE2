@@ -33,8 +33,12 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                  <button type="submit" class="btn btn-success">Se connecter</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
+                  <button type="submit" class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Connexion</button>
+                  <button class="btn btn-success" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                  </button>
                 </div>
             </form>
         </div>

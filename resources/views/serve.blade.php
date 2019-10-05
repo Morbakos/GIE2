@@ -53,8 +53,9 @@
                 </button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Oui</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Non</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-check"></i> Oui</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Oui</button>
             </div>
         </div>
     </div>
@@ -70,8 +71,9 @@
                 </button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Oui</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Non</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-check"></i> Oui</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Oui</button>
             </div>
         </div>
     </div>

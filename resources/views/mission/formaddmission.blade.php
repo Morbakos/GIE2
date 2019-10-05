@@ -394,6 +394,10 @@
                     <div class="form-group">
                         <div class="container">
                             <button class="btn btn-primary" type="submit" id="buttonSendFormAddMission"><i class="fas fa-paper-plane"></i> Envoyer</button>
+                            <button class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
                         </div>
                     </div>
             </form>
