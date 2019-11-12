@@ -14,12 +14,22 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
+            $table->increments('idUser');
+            $table->string('pseudoUser')->unique();
+            $table->string('emailUser')->unique();
+            $table->string('passwordUser');
+            $table->integer('idRangUser')->unsigned();
+            $table->string('avatarUser')->default('/users/avatar/default.jpg');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('idRangUser')
+                ->references('idRangUser')
+                ->on('ranguser')
+                ->onUpdate('restrict')
+                ->onDelete('restrict');
+
+            $table->engine = 'InnoDB';
         });
     }
 
@@ -30,6 +40,9 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::table('users', function(Blueprint $table) {
+            $table->dropForeign('users_idranguser_foreign');
+        });
+        Schema::drop('users');
     }
 }
