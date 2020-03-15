@@ -1,0 +1,180 @@
+nav.nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--nav-color);
+    width: 100%;
+    z-index: 100;
+    box-shadow: black 2px 2px 2px;
+}
+
+#nav-menu {
+    text-align: center;
+    padding: 5vh 0;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 0.4s, height 0.4s, padding 1s, visibility 0.5s;
+    z-index: -10;
+}
+
+.hidden-nav {
+    visibility: hidden;
+    height: 0vh !important;
+    padding: 0vh 0!important;
+    opacity: 0;
+    border: none !important;
+    z-index: -10 !important;
+}
+
+#nav-login {
+    padding: 5vh 0;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 0.4s, height 0.4s, padding 1s, visibility 0.5s;
+
+    text-align: center;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    z-index: -10;
+}
+
+.hidden-login {
+    visibility: hidden;
+    height: 0vh !important;
+    padding: 0vh 0!important;
+    opacity: 0;
+    border: none !important;
+    z-index: -10 !important;
+}
+
+a.btn-profil {
+    position: absolute;
+    top: 1.5vh;
+    right: 10vh;
+    font-size: 5vh;
+    color: var(--active-color) !important;
+    cursor: pointer;
+}
+
+a.icon-active {
+    color: var(--font-color) !important;
+}
+
+a.btn-profil:active,
+a.btn-profil:focus {
+    color: var(--font-color) !important;
+}
+
+.title-login {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    padding: 2vh 0;
+}
+
+.description-login {
+    padding: 2vh;
+    letter-spacing: 2px;
+}
+
+.label-login {
+    padding: 2vh;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.champ-login {
+    padding: 2vh;
+}
+
+.btn-submit {
+    margin: 4vh;
+    padding: 2vh 4vh;
+    font-weight: bold;
+    background-color: var(--active-color) !important;
+    color: var(--font-color);
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5rem;    
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.btn-submit:active,
+.btn-submit:focus,
+.btn-submit:hover {
+    color: var(--active-color);
+    background-color: var(--nav-color) !important;
+    border: 1px solid var(--active-color);
+}
+
+.nav-menu {
+    position: fixed;
+    display: inline-block;
+    top: 2vh;
+    right: 2vh;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.nav-menu .bar1, .nav-menu .bar2, .nav-menu .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--active-color);
+    margin: 1vh 0;
+    transition: 0.4s;
+    border-radius: 10rem;
+}
+
+.change-bar .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: var(--font-color);
+}
+
+.change-bar .bar2 {
+    opacity: 0;
+}
+
+.change-bar .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: var(--font-color);
+}
+
+nav.nav img {
+    margin: 2vh;
+    width: 6vh;
+    height: 6vh;
+}
+
+nav.nav ul {
+    margin-top: 2vh;
+    margin-right: 4.5vh;
+}
+
+nav.nav ul li {
+    list-style: none;
+    margin-bottom: 5vh;
+}
+
+nav.nav ul li a {
+    color: var(--font-color);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+nav.nav ul li a:hover,
+nav.nav ul li a:active,
+nav.nav ul li a:focus {
+    color: var(--active-color);
+}

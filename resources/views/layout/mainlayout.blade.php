@@ -5,8 +5,8 @@
     </head>
 
     <body>
-        @include('layout.partials.nav')
-        <div style="margin-top: 10%;"></div>
+        @include('layout.partials.navbar')
+        <div style="margin-top: 16vh;"></div>
         @yield('header')
         @yield('content')
         @include('layout.partials.footer')

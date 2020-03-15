@@ -1,12 +1,9 @@
-<?php $page = 0 ?>
-<!-- on import le template -->
 @extends('layout.mainlayout')
-<!-- on définit le titre de la page -->
 @section('title', 'Tutoriels')
-@section('sectiontitle', 'Créer un tutoriel')
-<!-- on ajoute le contenu du formulaire de mission -->
-@extends('tuto.formaddtuto')
 
+<!-- @section('sectiontitle', 'Créer un tutoriel')
+@ extends('tuto.formaddtuto')
+ -->
 
 @section('content')
     <!-- Nos Missions -->
@@ -36,5 +33,13 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section>
+        <h1>Tutoriels</h1>
+
+        <div class="table">
+            <a href="" class="line">Nom du tutoriel</a>
+        <div>
     </section>
 @endsection

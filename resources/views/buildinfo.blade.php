@@ -5,6 +5,7 @@
 @section('title', 'Accueil')
 <!-- on définit le contenu de la page -->
 @section('content')
+<!--
     <section>
         <div class="container bg-dark text-light text-center">
             <h1><i class="fas fa-4x fa-cogs"></i></h1><br><br>
@@ -15,4 +16,21 @@
             </div>
         </div>
     </section>
+-->
+
+<section>
+    <h1 class="text-center"><i class="fas fa-2x fa-cogs"></i></h1>
+    <h1 class="text-center">Site en version d'essai.</h1>
+    <div>Bienvenue sur le nouveau site du GIE. Il est en cours de 
+        construction donc certaines parties sont encore indisponible.
+    </div>
+    <div>
+        Pour nous aider, vous pouvez nous faire remonter 
+        votre feedback <a href="#">ici</a>.
+    </div>
+    <div>
+        Pour accéder à l'ancienne version c'est par là :
+        <a href="https://gie.polygames.net/">gie.polygames.net</a>
+    </div>
+</section>
 @endsection

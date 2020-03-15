@@ -1,0 +1,54 @@
+footer {
+    background-color: var(--nav-color);
+    color: var(--font-color);
+    padding: 5vh;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.title-footer {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding: 4vh 0;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: -2.5rem;
+}
+
+footer ul li {
+    padding-bottom: 1vh;
+}
+
+footer a {
+    color: var(--font-color);
+}
+
+footer a:active,
+footer a:focus,
+footer a:hover {
+    color: var(--active-color);
+    text-decoration: none;
+}
+
+footer ul.sociaux li {
+    font-size: 30px;
+    display: inline-block !important;
+    padding-right: 4vh;
+}
+
+footer .signature {
+    padding-top: 4vh;
+}
+
+footer .bohemia {
+    padding-top: 4vh;
+    font-size: 16px;
+}
+

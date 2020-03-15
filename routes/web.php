@@ -38,3 +38,5 @@ Route::get('/tutos/{n}', function () {
 Route::get('serve', function () {
     return view('serve');
 });
+
+Auth::routes();

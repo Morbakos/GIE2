@@ -1,14 +1,14 @@
-<?php $page = 3 ?>
-<!-- on import le template -->
 @extends('layout.mainlayout')
-<!-- on définit le titre de la page -->
 @section('title', 'Missions')
-@section('sectiontitle', 'Ajouter une mission')
-<!-- on ajoute le contenu du formulaire de mission -->
-@extends('mission.formaddmission')
+
+<!--
+@ section('sectiontitle', 'Ajouter une mission')
+@ extends('mission.formaddmission')
+-->
 
 @section('content')
-    <!-- Nos Missions -->
+    
+    <!--
     <section class="container">
         <div class="container bg-dark text-light">
             <h1>Nos missions</h1><br>
@@ -29,7 +29,7 @@
             </div>         
             <div class="container"> 
                 <div class="accordion" id="accordionExample">
-                    <!-- @ foreach ($missions as $mission) -->
+                    @ foreach ($missions as $mission)
                     <div class="card">
                         <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                         <div class="mb-0 text-left row">
@@ -44,12 +44,12 @@
                         </a>
                         <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
                         <div class="card-body">
-                            <!-- @ if (!Auth::guest()) -->
+                            @ if (!Auth::guest())
                             <div class="mb-0 text-center row">
                                 <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
                                 <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
                             </div><br>
-                            <!-- @ endif --> 
+                            @ endif 
                             <div class="mb-0 text-left row">
                                 <img src="/img/info/3.jpg" alt="" width="300" height="200">
                                 <div class="col-2 col-md-8">
@@ -128,9 +128,9 @@
                         </div>
                         </div>
                     </div>
-                    <!-- @ endforeach -->
-                    <!-- @ foreach ($missions as $mission) -->
-                    <div class="card">
+                    @ endforeach
+                    @ foreach ($missions as $mission)
+                    <div class="card hidden">
                             <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                             <div class="mb-0 text-left row">
                                 <div class="col-6 col-md-4">Opération Grenouille</div>
@@ -144,12 +144,12 @@
                             </a>
                             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
                             <div class="card-body">
-                                <!-- @ if (!Auth::guest()) -->
+                                @ if (!Auth::guest())
                                 <div class="mb-0 text-center row">
                                     <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
                                     <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
                                 </div><br>
-                                <!-- @ endif --> 
+                                @ endif
                                 <div class="mb-0 text-left row">
                                     <img src="/img/info/4.jpg" alt="" width="300" height="200">
                                     <div class="col-2 col-md-8">
@@ -228,8 +228,14 @@
                             </div>
                             </div>
                         </div>
-                        <!-- @ endforeach -->
+                        @ endforeach
                 </div>
             </div>
     </section>
+    -->
+
+    <section>
+        <h1>Missions</h1>
+    </section>
+
 @endsection
