@@ -2,14 +2,18 @@
   <img src="/img/logo.png" alt="">
 
   <a onclick="login_change(this)" class="btn-profil">
-    <i class="fas fa-user-circle"></i>
+    @if (Auth::guest())
+      <img src="/img/test/avatar-lapin.png" alt="" srcset="">
+    @else
+      <i class="fas fa-user-circle"></i>
+    @endif
   </a>
 
   <div id="nav-login" class="hidden-login">
 
     @if (!Auth::guest())
 
-    <div class="title-login">@USER</div>
+    <div class="title-login">Stians</div>
     <div class="border"></div>
     <ul>
       <li>
@@ -43,16 +47,16 @@
       {!! csrf_field() !!}
 
       <!-- mail -->
-      <label for="email" class="label-login">Adresse mail</label>
+      <label for="mail">Adresse mail</label>
       <div class="champ-login">
-        <input type="email" class="form-control" id="mail" placeholder="exemple@mail.net" required>
+        <input type="email" id="mail" placeholder="exemple@mail.net" required>
         <div class="invalid-feedback">Adresse mail inconnue.</div>
       </div>
 
       <!-- mot de passe -->
-      <label for="password" class="label-login">Mot de passe</label>
+      <label for="password">Mot de passe</label>
       <div class="champ-login">
-        <input type="password" class="form-control" id="password" placeholder="password" required>
+        <input type="password" id="password" placeholder="password" required>
         <div class="invalid-feedback">Mot de passe incorrect.</div>
       </div>
 

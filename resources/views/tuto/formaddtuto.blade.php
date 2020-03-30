@@ -1,39 +1,43 @@
-@section('header')
-<!-- @ if (!Auth::guest()) -->
-<section class="container">
-    <div class="container bg-dark text-light">
-        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseAdd" aria-expanded="false" aria-controls="collapseAdd">
-            <i class="fas fa-plus"></i> @yield('sectiontitle') 
-        </button>
-        <div class="collapse" id="collapseAdd">
-            <h1 style="padding-top: 10%;">@yield('sectiontitle')</h1><br>
-            <div class="container">
-                <form  class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Nom du tutoriel</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Entrer un nom" required>
-                        <div class="invalid-feedback">
-                            Entrer un nom pour le tutoriel.
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Contenu</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Entrer le contenu (formatage HTML accepté)" rows="10" required></textarea>
-                        <div class="invalid-feedback">
-                            Entrer le contenu du tutoriel.
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary" type="submit" id="buttonSendFormAddMission"><i class="fas fa-paper-plane"></i> Envoyer</button>
-                        <button class="btn btn-primary" type="button" disabled>
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            Chargment...
-                        </button>
-                    </div>
-                </form>
-            </div>
+@extends('layout.mainlayout')
+@section('title', 'Créer un tutoriel')
+@section('style', 'tutos.css')
+
+@section('content')
+    <section>
+        <h1>Créer un tutoriel</h1>
+
+        @if (!Auth::guest())
+
+        <form action="" method="POST">
+            <label for="title">Titre du tutoriel</label><br>
+            <input id="title" type="text" placeholder="Entrer un titre">
+
+            <label for="content">Contenu du tutoriel</label>
+            <textarea name="content" id="content" cols="30" rows="10"
+                      placeholder="Entrer le contenu"></textarea>
+        </form>
+        
+        <a class="btn" href="/tutos" onclick="">Créer un tutoriel</a>
+
+        <div class="border"></div>
+
+        <span>
+            Si des éléments manques, et vous empêche de créer votre tutoriel, 
+            merci de contacter un membre du <span class="didi-staff">@Staff</span> 
+            directement sur notre <a href="https://discord.gg/AmWBzqV" class="didi">Discord</a>.
+        </span>
+
+        @else
+
+        <div>
+            Vous devez d'abord vous connecter avant de pouvoir créer un tutoriel.
         </div>
-    </div>
-</section>
-<!-- @ endif --> 
+    
+        <div>
+            Si vous rencontrez des problèmes merci de contacter un membre du <span class="didi-staff">@Staff</span> 
+            directement sur notre <a href="https://discord.gg/AmWBzqV" class="didi">Discord</a>.
+        </div> 
+
+        @endif
+    </section>
 @endsection

@@ -1,39 +1,43 @@
-@import "navbar.css";
-@import "footer.css";
-@import "missions.css";
-@import "tutos.css";
+@import "layout/navbar.css";
+@import "layout/footer.css";
 
 /*-- theme color --*/
 :root {
-    --main-color : rgba(10, 10, 10, 0.5);
-    --nav-color : rgba(0, 0, 0, 0.9);
+    --main-color : rgba(0, 0, 0, 0.9);
     --font-color : #AAA;
     --active-color : rgb(111, 16, 10);
 }
 
 /*-- body --*/
 body {
-    background: url(../img/fond.jpg);
+    background: url("/img/fond.jpg");
     background-attachment: fixed;
     color: var(--font-color);
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
+/*-- séparateur --*/
 .border {
     width: 80%;
     margin: 5vh;
     margin-left: 10%;
-    border: 1px solid var(--font-color) !important;
+    border: .5px solid var(--font-color) !important;
+    height: 1px !important;
+    padding: 0rem;
 }
 
+/*-- element caché --*/
 .hidden {
     display: none;
 }
 
+/*-- habillage section --*/
 section {
     padding: 5vh;
 }
 
+/*--- titre ---*/
 section h1 {
     padding: 5vh 0;
 }
@@ -44,6 +48,7 @@ section div {
     font-size: 18px;
 }
 
+/*--- lien ---*/
 section div a {
     color: var(--active-color);
     font-weight: bold;
@@ -56,15 +61,265 @@ section div a:hover {
     text-decoration: none;
 }
 
-section .table {
-    width: 100%;
-    height: auto;
-    padding: 4vh 2vh;
-    background-color: red;
+/*-- button --*/
+.btn {
+    margin: 4vh 5vh !important;
+    padding: 2vh 4vh;
+    font-weight: bold;
+    background-color: var(--active-color) !important;
+    color: var(--font-color) !important;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5rem !important;    
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-section .line {
-    background-color: var(--nav-color);
-    border-radius: 5px;
-    padding: 2vh 5vh;
+.btn:active,
+.btn:focus,
+.btn:hover {
+    color: var(--active-color);
+    background-color: var(--main-color) !important;
+    border: 1px solid var(--active-color);
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+    cursor: normal;
+}
+
+/*-- tableau --*/
+section .tabler ul {
+    padding-left: 0;
+    border-radius: .5rem;
+    list-style: none;
+}
+
+section .tabler ul li:first-child a {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+section .tabler ul li:last-child a {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+section .tabler ul li a {
+    display: block;
+    background-color: var(--main-color);
+    border: 1px solid var(--active-color);
+    color: var(--font-color);
+    padding: .75rem;
+    margin-top: -1px;
+    letter-spacing: 2px;
+}
+
+section .tabler ul li a:active,
+section .tabler ul li a:focus,
+section .tabler ul li a:hover {
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--active-color);
+}
+
+/*-- pagination --*/
+nav.pagi ul {
+    margin: 2vh 0;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+nav.pagi ul li:first-child a {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+nav.pagi ul li:last-child a {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+nav.pagi ul li a {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: var(--active-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--active-color);
+    font-weight: bold;
+}
+
+nav.pagi ul li a:active,
+nav.pagi ul li a:focus,
+nav.pagi ul li a:hover {
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--active-color);
+}
+
+nav.pagi ul li.select a {
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--active-color);
+}
+
+/*-- image --*/
+img {
+    width: 100%;
+    padding: 0vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*-- formulaire --*/
+form label {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 5vh;
+}
+
+form input, form textarea, select {
+    width: 100%;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    color: #495057;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 2vh 0;
+    overflow: hidden;
+}
+
+select {
+    padding: .55rem .75rem !important;
+}
+
+select option {
+    overflow-y: scroll;
+}
+
+form textarea {
+    overflow-y: scroll !important;
+}
+
+form .checkbox {
+    padding: 2vh 0;
+}
+
+form .checkbox label, form .radiobox label, label.file {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-weight: normal;
+    margin: 5px;
+    padding-top: 2px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+
+    margin: 0px;
+    height: 18px;
+    width: 18px;
+    background: #FFFFFF;
+    border: none;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--active-color);
+}
+
+input[type="checkbox"]:checked:before {
+    font-family: Arial;
+    content: '✔';
+    margin: -4px 2px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    position: absolute;
+}
+
+input[type="radio"] {    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+
+    margin: 0px;
+    height: 18px;
+    width: 18px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: .5rem;
+}
+
+input[type="radio"]:checked {
+    background: var(--active-color);
+}
+
+input[type="radio"]:checked:before {
+    font-family: Arial;
+    content: '✔';
+    margin: -4px 2px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    position: absolute;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.file {
+    color: var(--font-color);
+    background-color: var(--main-color);
+    border-radius: .25rem;
+    margin: 2vh;
+    padding: 1.5vh;
+    border: 1px solid var(--active-color);
+}
+
+label.file:focus, 
+label.file:active, 
+label.file:hover {
+    background-color: var(--active-color);
+    color: var(--font-color);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px var(--main-color);
+}
+
+/*-- mention discord --*/
+.didi {
+    color : #7289DA;
+    font-weight: bold;
+    font-family: Whitney, Helvetica;
+    font-style: inherit;
+}
+
+a.didi:hover,
+a.didi:focus,
+a.didi:active {
+    color : #7289DA;
+    background-color: rgba(114, 137, 218, 0.2);
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.didi-staff {
+    color : rgb(233, 30, 99);
+    background-color: rgba(233, 30, 99, 0.1);
+    font-family: Whitney, Helvetica;
+    font-style: inherit;
 }

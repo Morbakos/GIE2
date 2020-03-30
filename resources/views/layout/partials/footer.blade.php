@@ -57,10 +57,10 @@
     </ul>
     <div class="signature">
         <small>Site &copy GIE 2020 by 
-            <a target="-blank" href="">Pippermint</a>, 
-            <a target="-blank" href="">Morbakos</a>, 
-            <a target="-blank" href="">Jack</a>, et 
-            <a target="-blank" href="http://www.chrisblnc.fr">Stians.</a>
+            <a target="-blank" href="" class="didi">@Pippermint</a>, 
+            <a target="-blank" href="" class="didi">@Morbakos</a>, 
+            <a target="-blank" href="" class="didi">@Jack</a>, et 
+            <a target="-blank" href="http://www.chrisblnc.fr" class="didi">@Stians.</a>
         </small>
     </div>
     <div class="bohemia">

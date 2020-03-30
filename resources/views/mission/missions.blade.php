@@ -1,5 +1,6 @@
 @extends('layout.mainlayout')
 @section('title', 'Missions')
+@section('style', 'missions.css')
 
 <!--
 @ section('sectiontitle', 'Ajouter une mission')
@@ -7,235 +8,131 @@
 -->
 
 @section('content')
-    
-    <!--
-    <section class="container">
-        <div class="container bg-dark text-light">
-            <h1>Nos missions</h1><br>
-            <div>
-                <nav aria-label="Page navigation missions">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#">Suivant</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>         
-            <div class="container"> 
-                <div class="accordion" id="accordionExample">
-                    @ foreach ($missions as $mission)
-                    <div class="card">
-                        <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                        <div class="mb-0 text-left row">
-                            <div class="col-6 col-md-4">Raid Explosif</div>
-                            <div class="col-6 col-md-1">40 joueurs</div>
-                            <div class="col-6 col-md-2">Altis</div>
-                            <div class="col-6 col-md-2">Attaque</div>
-                            <div class="col-6 col-md-1">Russes</div>
-                            <div class="col-6 col-md-0">10/10/10</div>
-                            <div class="col-6 col-md-0"><i class="fas fa-check text-success"></i></div>
-                        </div>
-                        </a>
-                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
-                        <div class="card-body">
-                            @ if (!Auth::guest())
-                            <div class="mb-0 text-center row">
-                                <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
-                                <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
-                            </div><br>
-                            @ endif 
-                            <div class="mb-0 text-left row">
-                                <img src="/img/info/3.jpg" alt="" width="300" height="200">
-                                <div class="col-2 col-md-8">
-                                    <p><b>Background : </b>
-                                        L'armée Russe réalise des essais de nouveaux missiles dans le nord d'Altis.
-                                        Nous avons appris que la ville de Syrta leur servait de base avancée pour ces
-                                        oppérations. Nous allons les faire cesser dans les plus brefs délais !
-                                    </p>
-                                    <p><b>Mission : </b>
-                                        D'après nos sources, 4 missiles sont actuellement entreposés près de Syrta.
-                                        Lancez un assaut sur la cité et détruisez ces 4 ogives. Profitez en pour porter
-                                        un coup aux troupes sur place qui gardent la ville. Et n'hésitez pas à faire des
-                                        prisonniers si l'occasion se présente. Une fois les 4 missiles détruits, retournez
-                                        à votre camp de base sur le stade.
-                                    </p>
-                                    <p><b>Renseignements : </b>
-                                        La ville est principalement gardée par de l'infanterie. Nos sources fibt état de 
-                                        seulement quelques UAZ en patrouille sur les routes, et de quelques URAL sur zone.
-                                        Aucun blindé n'est à signaler, les Russes n'ont visiblement pas jugé utile d'en
-                                        faire venir sur l'île. En revanche, nous n'avons que peu d'informations sur leurs 
-                                        capacités aériennes. Les Russes se sont largement déployés dans le nord du pays, 
-                                        seuls les alentours de Kavala sont encore sous notre contrôle.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mb-0 text-left row">
-                                <div class="col-6 col-md-2"><b>Par : </b>Mystery</div>
-                                <div class="col-6 col-md-2"><b>Départ : </b>21h00</div>
-                                <div class="col-6 col-md-2"><b>Mort : </b>définitive</div>
-                                <div class="col-6 col-md-3"><b>Météo : </b>soleil - pluie</div>
-                                <div class="col-6 col-md-3"><b>Stuff : </b>intégré - woodland</div>
-                            </div>
-                            <div class="mb-0 text-left row">
-                                <div class="col-6 col-md-4">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><b>Troupes : </b>Charlie</li>
-                                        <li class="list-group-item"><b>Objectifs : </b>
-                                            <ul>
-                                                <li>détruire objectif</li>
-                                                <li>récupérer infos</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 col-md-4">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><b>Véhicules : </b>
-                                            <ul>
-                                                <li>4x Humvee N/A (4P)</li>
-                                                <li>4x Humvee N/A (8P)</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 col-md-5">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><b>Terrains : </b>
-                                            <ul>
-                                                <li>ville</li>
-                                                <li>campagne</li>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item"><b>Autres Infos // Corrections : </b>
-                                            <p>
-
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="mb-0 text-left row">
-                                <div class="col-6 col-md-4"><b>Dernier try : </b>12/12/12</div>
-                                <div class="col-6 col-md-3"><b>Leader : </b>LeDoc</div>
-                                <div class="col-6 col-md-2"><b>Statut : </b><span class="text-danger"> échec</span></div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    @ endforeach
-                    @ foreach ($missions as $mission)
-                    <div class="card hidden">
-                            <a class="btn btn-link collapsed card-header text-muted" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            <div class="mb-0 text-left row">
-                                <div class="col-6 col-md-4">Opération Grenouille</div>
-                                <div class="col-6 col-md-1">30 joueurs</div>
-                                <div class="col-6 col-md-2">Utes</div>
-                                <div class="col-6 col-md-2">November</div>
-                                <div class="col-6 col-md-1">Russes</div>
-                                <div class="col-6 col-md-0">10/10/10</div>
-                                <div class="col-6 col-md-0"><i class="fas fa-times text-danger"></i></div>
-                            </div>
-                            </a>
-                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
-                            <div class="card-body">
-                                @ if (!Auth::guest())
-                                <div class="mb-0 text-center row">
-                                    <div class="col-2 col-md-5"><a href="missions/edit/1" class="text-primary"><i class="fas fa-pen"> </i>Editer</a></div>
-                                    <div class="col-2 col-md-6"><a href="" class="text-success"><i class="fas fa-file-signature"></i>Écrire un briefing</a></div>
-                                </div><br>
-                                @ endif
-                                <div class="mb-0 text-left row">
-                                    <img src="/img/info/4.jpg" alt="" width="300" height="200">
-                                    <div class="col-2 col-md-8">
-                                        <p><b>Background : </b>
-                                            L'armée Russe réalise des essais de nouveaux missiles dans le nord d'Altis.
-                                            Nous avons appris que la ville de Syrta leur servait de base avancée pour ces
-                                            oppérations. Nous allons les faire cesser dans les plus brefs délais !
-                                        </p>
-                                        <p><b>Mission : </b>
-                                            D'après nos sources, 4 missiles sont actuellement entreposés près de Syrta.
-                                            Lancez un assaut sur la cité et détruisez ces 4 ogives. Profitez en pour porter
-                                            un coup aux troupes sur place qui gardent la ville. Et n'hésitez pas à faire des
-                                            prisonniers si l'occasion se présente. Une fois les 4 missiles détruits, retournez
-                                            à votre camp de base sur le stade.
-                                        </p>
-                                        <p><b>Renseignements : </b>
-                                            La ville est principalement gardée par de l'infanterie. Nos sources fibt état de 
-                                            seulement quelques UAZ en patrouille sur les routes, et de quelques URAL sur zone.
-                                            Aucun blindé n'est à signaler, les Russes n'ont visiblement pas jugé utile d'en
-                                            faire venir sur l'île. En revanche, nous n'avons que peu d'informations sur leurs 
-                                            capacités aériennes. Les Russes se sont largement déployés dans le nord du pays, 
-                                            seuls les alentours de Kavala sont encore sous notre contrôle.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mb-0 text-left row">
-                                    <div class="col-6 col-md-2"><b>Par : </b>Mystery</div>
-                                    <div class="col-6 col-md-2"><b>Départ : </b>21h00</div>
-                                    <div class="col-6 col-md-2"><b>Mort : </b>définitive</div>
-                                    <div class="col-6 col-md-3"><b>Météo : </b>soleil - pluie</div>
-                                    <div class="col-6 col-md-3"><b>Stuff : </b>intégré - woodland</div>
-                                </div>
-                                <div class="mb-0 text-left row">
-                                    <div class="col-6 col-md-4">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item"><b>Troupes : </b>Charlie</li>
-                                            <li class="list-group-item"><b>Objectifs : </b>
-                                                <ul>
-                                                    <li>détruire objectif</li>
-                                                    <li>récupérer infos</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 col-md-4">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item"><b>Véhicules : </b>
-                                                <ul>
-                                                    <li>4x Humvee N/A (4P)</li>
-                                                    <li>4x Humvee N/A (8P)</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 col-md-5">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item"><b>Terrains : </b>
-                                                <ul>
-                                                    <li>ville</li>
-                                                    <li>campagne</li>
-                                                </ul>
-                                            </li>
-                                            <li class="list-group-item"><b>Autres Infos // Corrections : </b>
-                                                <p>
-    
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="mb-0 text-left row">
-                                    <div class="col-6 col-md-4"><b>Dernier try : </b>12/12/12</div>
-                                    <div class="col-6 col-md-3"><b>Leader : </b>LeDoc</div>
-                                    <div class="col-6 col-md-2"><b>Statut : </b><span class="text-danger"> échec</span></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        @ endforeach
-                </div>
-            </div>
-    </section>
-    -->
 
     <section>
         <h1>Missions</h1>
+        
+        @if (!Auth::guest())
+        <a href="/missions/add" class="btn">Ajouter une mission</a>
+        @endif
+        
+        <nav class="pagi">
+            <ul>
+                <li><a href="">Précédent</a></li>
+                <li class="select"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">Suivant</a></li>
+            </ul>
+        </nav>
+
+        <div class="tabler">
+            <ul id="tab">
+                <!-- @ foreach ($missions as $mission) -->
+                <li class="hidden" onclick="toogle_list(this)"><a>Opération Grenouille</a>
+                    <ul>
+                        @if (!Auth::guest())
+                        <a href="" class="btn"><i class="fas fa-pen"></i> Éditer</a>
+                        <a href="" class="btn"><i class="fas fa-file-signature"></i> Débrifer</a>
+                        <div class="border"></div>
+                        @endif
+                        <img src="/img/test/op_grenouille.png" alt="">
+                        <div class="border"></div>
+                        <li>Nombre joueurs : 30</li>
+                        <li>Carte :  Utes</li>
+                        <li>Objectif(s) : Neutraliser l'armement</li>
+                        <li>Composante(s) : November</li>
+                        <li>Ennemies : Russes</li>
+                        <li>Mission Maker : Ledoc</li>
+                        <li>Date de création : 01/04/2019</li>
+                        <div class="border"></div>
+                        <li>Last try : 10/12/2019</li>
+                        <li>Leader : Morbakos</li>
+                        <li>Nombre de joueurs présent : 18</li>
+                        <li>Résultat : <span class="result">Réussi</span></li>
+                        <li>Noté : 15/20</li>
+                        <div class="border"></div>
+                        <li> Background :
+                            <ul>
+                                <li>L'armée Russe réalise des essais de nouveaux missiles dans le nord d'Altis.
+                                    Nous avons appris que la ville de Syrta leur servait de base avancée pour ces
+                                    oppérations. Nous allons les faire cesser dans les plus brefs délais !
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Mission :
+                            <ul>
+                                <li>D'après nos sources, 4 missiles sont actuellement entreposés près de Syrta.
+                                    Lancez un assaut sur la cité et détruisez ces 4 ogives. Profitez en pour porter
+                                    un coup aux troupes sur place qui gardent la ville. Et n'hésitez pas à faire des
+                                    prisonniers si l'occasion se présente. Une fois les 4 missiles détruits, retournez
+                                    à votre camp de base sur le stade.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Renseignements :
+                            <ul>
+                                <li>La ville est principalement gardée par de l'infanterie. Nos sources fibt état de 
+                                    seulement quelques UAZ en patrouille sur les routes, et de quelques URAL sur zone.
+                                    Aucun blindé n'est à signaler, les Russes n'ont visiblement pas jugé utile d'en
+                                    faire venir sur l'île. En revanche, nous n'avons que peu d'informations sur leurs 
+                                    capacités aériennes. Les Russes se sont largement déployés dans le nord du pays, 
+                                    seuls les alentours de Kavala sont encore sous notre contrôle.
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="border"></div>
+                        <li>Troupes alliés : 
+                            <ul>
+                                <li>Infanterie November // Delta</li>
+                            </ul>
+                        </li>
+                        <li>Objectif(s) :
+                            <ul>
+                                <li>Localiser l'objectif</li>
+                                <li>Rester furtif</li>
+                                <li>Détruire le SU-25</li>
+                            </ul>
+                        </li>
+                        <div class="border"></div>
+                        <li>Heure de départ : 21h</li>
+                        <li>Respawn : Oui</li>
+                        <li>Véhicule(s) :
+                            <ul>
+                                <li>Bateau (5 passagers)</li>
+                            </ul>
+                        </li>
+                        <li>Météo : Nuit - Nuageux</li>
+                        <li>Camouflage : Woodland</li>
+                        <li>Terrain : 
+                            <ul>
+                                <li>Mer</li>
+                                <li>Plage</li>
+                                <li>Fôret</li>
+                            </ul>
+                        </li>
+                        <li>Équipement : Arsenal</li>
+                        <div class="border"></div>
+                        <li>Autre(s) info(s) : 
+                            <ul>
+                                <li>La basse russe est équipé d'anti-aérien, 
+                                    aucune approche aérienne ne peut être tenté 
+                                    tant que l'AA Russe n'a pas été détruit.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Correstion(s) : 
+                            <ul>
+                                <li>Nuit</li>
+                                <li>Ajouter lunette de plongee</li>
+                                <li>Explosifs & Delta</li>                            
+                            </ul>
+                        </li>
+                    </ul>           
+                </li>
+                <!-- @ endforeach -->
+            </ul>
+        </div>
     </section>
 
 @endsection

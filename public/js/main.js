@@ -17,3 +17,19 @@ function submit(type) {
 
     submit.classList.remove('hidden');
 }
+
+function toogle_list(line) {
+    line.classList.toggle("hidden");
+
+    if (results = document.getElementsByClassName("result")) {
+        for (let r = 0; r < results.length; r++) {
+            if (results[r].innerHTML == "Réussi") {
+                results[r].classList.add("success");
+            } else if (results[r].innerHTML == "Échec") {
+                results[r].classList.add("failed");
+            }
+        }
+    }
+
+    window.scrollTo(line.offsetTop, 0);
+}

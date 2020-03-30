@@ -1,7 +1,9 @@
 <script src="/js/jquery-3.4.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/clipboard.js"></script>
+<script src="/js/main.js"></script>
 <script>
+    /*
     var sticky = document.querySelector('.sticky');
 
     if (sticky.style.position !== 'sticky') {
@@ -22,4 +24,5 @@
     clipboard.on('error', function(e) {
         console.log(e);
     });
+    */
 </script>

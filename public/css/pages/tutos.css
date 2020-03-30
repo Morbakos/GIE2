@@ -1,0 +1,32 @@
+section.tuto {
+    padding: 5vh 0;
+}
+
+section.tuto h1 {
+    padding: 5vh;
+}
+
+section.tuto div {
+    padding: 5vh;
+    background-color: var(--main-color);
+}
+
+section.tuto  code {
+    font-family: monospace;
+    letter-spacing: 0;
+    color: #5FCF11;
+    background-color: #333333;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: block;
+    overflow-x: scroll;
+}
+
+section.tuto code .elem {
+    color: slateblue;
+}
+
+section.tuto .btn {
+    margin-left: 5vh !important;
+}
