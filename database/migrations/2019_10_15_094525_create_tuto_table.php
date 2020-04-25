@@ -18,6 +18,7 @@ class CreateTutoTable extends Migration
             $table->integer('idAuteur')->unsigned();
             $table->integer('nomTuto');
             $table->integer('contenuTuto');
+            $table->timestamps();
 
             $table->foreign('idAuteur')
                   ->references('idUser')

@@ -16,7 +16,7 @@ class CreateFormationTable extends Migration
         Schema::create('formation', function (Blueprint $table) {
             $table->increments('idFormation');
             $table->integer('idModule')->unsigned();
-            $table->text('formation');
+            $table->text('contenuFormation');
 
             $table->foreign('idModule')
                   ->references('idModule')
