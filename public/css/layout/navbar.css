@@ -1,7 +1,7 @@
 nav.nav {
     position: fixed;
     top: 0;
-    background-color: var(--nav-color);
+    background-color: var(--main-color);
     width: 100%;
     z-index: 100;
     box-shadow: black 2px 2px 2px;
@@ -50,11 +50,27 @@ nav.nav {
 
 a.btn-profil {
     position: absolute;
-    top: 1.5vh;
+    top: 2vh;
+    margin-top: -1.5%;
     right: 10vh;
-    font-size: 5vh;
+    font-size: 37px;
     color: var(--active-color) !important;
     cursor: pointer;
+}
+
+a.btn-profil i {
+    line-height: inherit;
+}
+
+a.btn-profil img {
+    border-radius: 5rem;
+    height: 40px !important;
+    width: 40px !important;
+    line-height: inherit;
+    margin: 1.3vh 0 !important;
+    
+    top: 2vh;
+    margin-top: 0.7vh !important;
 }
 
 a.icon-active {
@@ -80,15 +96,8 @@ a.btn-profil:focus {
     letter-spacing: 2px;
 }
 
-.label-login {
-    padding: 2vh;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
 .champ-login {
-    padding: 2vh;
+    padding: 0 5vh;
 }
 
 .btn-submit {
@@ -109,7 +118,7 @@ a.btn-profil:focus {
 .btn-submit:focus,
 .btn-submit:hover {
     color: var(--active-color);
-    background-color: var(--nav-color) !important;
+    background-color: var(--main-color) !important;
     border: 1px solid var(--active-color);
 }
 
@@ -126,9 +135,9 @@ a.btn-profil:focus {
     width: 35px;
     height: 5px;
     background-color: var(--active-color);
-    margin: 1vh 0;
+    margin: 7px 0;
     transition: 0.4s;
-    border-radius: 10rem;
+    border-radius: .5rem;
 }
 
 .change-bar .bar1 {
@@ -149,8 +158,9 @@ a.btn-profil:focus {
 
 nav.nav img {
     margin: 2vh;
-    width: 6vh;
-    height: 6vh;
+    width: 45px;
+    height: 45px;
+    border: none;
 }
 
 nav.nav ul {

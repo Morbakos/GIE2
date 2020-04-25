@@ -7,7 +7,6 @@
     <body>
         @include('layout.partials.navbar')
         <div style="margin-top: 16vh;"></div>
-        @yield('header')
         @yield('content')
         @include('layout.partials.footer')
         @include('layout.partials.scripts')
