@@ -134,7 +134,7 @@ a.btn-profil:focus {
 .nav-menu .bar1, .nav-menu .bar2, .nav-menu .bar3 {
     width: 35px;
     height: 5px;
-    background-color: var(--active-color);
+    background-color: var(--icon-active);
     margin: 7px 0;
     transition: 0.4s;
     border-radius: .5rem;
@@ -151,8 +151,8 @@ a.btn-profil:focus {
 }
 
 .change-bar .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-10px, -8px);
+    transform: rotate(45deg) translate(-10px, -8px);
     background-color: var(--font-color);
 }
 
@@ -161,6 +161,7 @@ nav.nav img {
     width: 45px;
     height: 45px;
     border: none;
+    object-fit: contain;
 }
 
 nav.nav ul {
@@ -187,4 +188,26 @@ nav.nav ul li a:hover,
 nav.nav ul li a:active,
 nav.nav ul li a:focus {
     color: var(--active-color);
+}
+
+@media (min-width: 1200px) {
+    nav.nav {
+        box-shadow: none;
+    }
+
+    #nav-menu {
+        height: 14vh;
+        padding: 0;
+    }
+
+    nav.nav ul {
+        display: inline-flex;
+        padding: 0;
+    }
+
+    nav.nav ul li {
+        padding: 2vh;
+    }
+
+
 }

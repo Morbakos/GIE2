@@ -52,3 +52,21 @@ footer .bohemia {
     font-size: 16px;
 }
 
+@media (min-width: 1200px) {
+    footer {
+        display: inline-block;
+    }
+
+    footer .case-footer {
+        padding: 10vh;
+        display: inline-table;
+    }
+
+    footer .signature {
+        padding: 2vh 10vh;
+    }
+
+    footer .bohemia {
+        padding: 2vh 10vh;
+    }
+}

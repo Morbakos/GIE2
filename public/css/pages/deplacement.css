@@ -1,0 +1,21 @@
+section img {
+    margin: 5vh 0;
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+    section .img-deplacment {
+        display: inline-flex;
+    }
+
+    section .img-deplacment .left-deplacment {
+        padding-left: 5vh;
+    }
+
+    section .img-deplacment img {
+        width: 40%;
+    }
+}

@@ -1,6 +1,7 @@
 <nav class="nav">
-  <img src="/img/logo.png" alt="">
+  <a href="/"><img src="/img/logo.png" alt="" style="box-shadow: none;"></a>
 
+  <!--
   <a onclick="login_change(this)" class="btn-profil">
     @if (Auth::guest())
       <img src="/img/test/avatar-lapin.png" alt="" srcset="">
@@ -8,10 +9,13 @@
       <i class="fas fa-user-circle"></i>
     @endif
   </a>
-
+  -->
+  
+  <!--
   <div id="nav-login" class="hidden-login">
 
-    @if (!Auth::guest())
+
+    @ if (!Auth::guest())
 
     <div class="title-login">Stians</div>
     <div class="border"></div>
@@ -33,8 +37,8 @@
         <a>Déconnexion</a>
       </li>
     </ul>
-
-    @else
+    
+    @ else
 
     <div class="title-login">Connexion</div>
     <div class="description-login">
@@ -42,34 +46,36 @@
       par un administrateur pour pouvoir vous connecter.
     </div>
 
-    <form action="{{ route('login') }}" method="POST">
+    <form action="{ { route('login') }}" method="POST">
 
-      {!! csrf_field() !!}
+      { !! csrf_field() !!}
 
-      <!-- mail -->
+      
       <label for="mail">Adresse mail</label>
       <div class="champ-login">
         <input type="email" id="mail" placeholder="exemple@mail.net" required>
         <div class="invalid-feedback">Adresse mail inconnue.</div>
       </div>
 
-      <!-- mot de passe -->
+      
       <label for="password">Mot de passe</label>
       <div class="champ-login">
         <input type="password" id="password" placeholder="password" required>
         <div class="invalid-feedback">Mot de passe incorrect.</div>
       </div>
 
-      <!-- submit -->
+      
       <button type="submit" onclick="submit('login')" class="btn-submit">
         <span class="spinner-border spinner-border-sm hidden" id="submit-login"></span>
         Connexion
       </button>
     </form>
 
-    @endif
+    @ endif
+    
 
   </div>
+  -->
 
   <a onclick="navbar_change(this)" class="nav-menu">
     <div class="bar1"></div>
@@ -78,7 +84,7 @@
   </a>
 
   <div id="nav-menu" class="hidden-nav">
-    <ul class="nav-left">
+    <ul class="nav-lien">
       <li>
         <a href="/">Accueil</a>
       </li>
@@ -86,18 +92,16 @@
         <a>Planning</a>
       </li>
       <li>
-        <a href="/missions">Missions</a>
+        <a>Missions</a>
       </li>
       <li>
-        <a>Chartes</a>
+        <a href="/regles">Chartes</a>
       </li>
-    </ul>
-    <ul class="nav-right">
       <li>
         <a>Team</a>
       </li>
       <li>
-        <a>Rejoindre</a>
+        <a href="/rejoindre">Rejoindre</a>
       </li>
       <li>
         <a>À propos</a>

@@ -5,12 +5,13 @@
 :root {
     --main-color : rgba(0, 0, 0, 0.9);
     --font-color : #AAA;
-    --active-color : rgb(111, 16, 10);
+    --active-color : rgb(156, 25, 16);
+    --icon-active : rgb(111, 16, 10);
 }
 
 /*-- body --*/
 body {
-    background: url("/img/fond.jpg");
+    background: url("/img/fond.png");
     background-attachment: fixed;
     color: var(--font-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -22,8 +23,8 @@ body {
     width: 80%;
     margin: 5vh;
     margin-left: 10%;
-    border: .5px solid var(--font-color) !important;
-    height: 1px !important;
+    border: 2px solid var(--icon-active) !important;
+    height: .1px !important;
     padding: 0rem;
 }
 
@@ -37,7 +38,7 @@ section {
     padding: 5vh;
 }
 
-/*--- titre ---*/
+/*--- mise en forme ---*/
 section h1 {
     padding: 5vh 0;
 }
@@ -48,15 +49,61 @@ section div {
     font-size: 18px;
 }
 
+section ul, section ol {
+    margin-top: 2rem;
+}
+
+section ul li, section ol li{
+    margin-bottom: 2rem;
+}
+
+section ul li:last-child, section ol li:last-child{
+    margin-bottom: 0;
+}
+
+section u {
+    text-decoration: none;
+    border-bottom: 3px solid var(--active-color);
+}
+
+section b {
+    font-size: larger;
+}
+
+section mark {
+    background-color: var(--active-color);
+    font-size: larger;
+    letter-spacing: .25vh;
+    padding: 2vh;
+    display: block;
+}
+
 /*--- lien ---*/
+h1 a {
+    color: var(--active-color);
+    font-weight: bold;
+}
+
 section div a {
     color: var(--active-color);
     font-weight: bold;
+    font-size: 20px;
+}
+
+section div small a {
+    font-size: 120%;
 }
 
 section div a:active,
 section div a:focus,
 section div a:hover {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+h1 a:active,
+h1 a:focus,
+h1 a:hover {
     color: var(--font-color);
     text-decoration: none;
 }
@@ -96,6 +143,10 @@ section .tabler ul {
     list-style: none;
 }
 
+section .tabler ul li{
+    margin: 0;
+}
+
 section .tabler ul li:first-child a {
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
@@ -104,15 +155,15 @@ section .tabler ul li:first-child a {
 section .tabler ul li:last-child a {
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
+    border-bottom: none;
 }
 
 section .tabler ul li a {
     display: block;
-    background-color: var(--main-color);
-    border: 1px solid var(--active-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid var(--active-color);
     color: var(--font-color);
     padding: .75rem;
-    margin-top: -1px;
     letter-spacing: 2px;
 }
 
@@ -121,7 +172,7 @@ section .tabler ul li a:focus,
 section .tabler ul li a:hover {
     text-decoration: none;
     color: var(--font-color);
-    background-color: var(--active-color);
+    background-color: var(--icon-active);
 }
 
 /*-- pagination --*/
@@ -174,6 +225,8 @@ img {
     width: 100%;
     padding: 0vh;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+    height: 25vh;
 }
 
 /*-- formulaire --*/
@@ -305,6 +358,7 @@ label.file:hover {
     font-weight: bold;
     font-family: Whitney, Helvetica;
     font-style: inherit;
+    letter-spacing: 2px;
 }
 
 a.didi:hover,
@@ -313,13 +367,138 @@ a.didi:active {
     color : #7289DA;
     background-color: rgba(114, 137, 218, 0.2);
     text-decoration: none;
-    font-weight: normal;
-    letter-spacing: 1px;
+}
+
+.ts {
+    color : #285987;
+    font-weight: bold;
+    font-family: Whitney, Helvetica;
+    font-style: inherit;
+    letter-spacing: 2px;
+}
+
+a.ts:hover,
+a.ts:focus,
+a.ts:active {
+    color : white;
+    background-color: #285987;
+    text-decoration: none;
 }
 
 .didi-staff {
     color : rgb(233, 30, 99);
-    background-color: rgba(233, 30, 99, 0.1);
     font-family: Whitney, Helvetica;
     font-style: inherit;
+    letter-spacing: 2px;
+}
+
+a.didi-staff:hover,
+a.didi-staff:focus,
+a.didi-staff:active {
+    color : rgb(233, 30, 99);
+    background-color: rgba(233, 30, 99, 0.1);
+    text-decoration: none;
+}
+
+.didi-forma {
+    color : rgb(230, 126, 34);
+    font-family: Whitney, Helvetica;
+    font-style: inherit;
+    letter-spacing: 2px;
+}
+
+a.didi-forma:hover,
+a.didi-forma:focus,
+a.didi-forma:active {
+    color : rgb(230, 126, 34);
+    background-color: rgba(230, 126, 34, 0.1);
+    text-decoration: none;
+}
+
+.didi-membre {
+    color : rgb(52, 152, 219);
+    font-family: Whitney, Helvetica;
+    font-style: inherit;
+    letter-spacing: 2px;
+}
+
+a.didi-membre:hover,
+a.didi-membre:focus,
+a.didi-membre:active {
+    color : rgb(52, 152, 219);
+    background-color: rgba(52, 152, 219, 0.1);
+    text-decoration: none;
+}
+
+.polygames {
+    color : rgb(195, 121, 24);
+}
+
+a.facebook:active,
+a.facebook:focus,
+a.facebook:hover {
+    color: #2d88ff !important;
+}
+
+a.youtube:active,
+a.youtube:focus,
+a.youtube:hover {
+    color: #ff0000 !important;
+}
+
+a.discord:active,
+a.discord:focus,
+a.discord:hover {
+    color: #7289DA !important;
+}
+
+a.teamspeak:active,
+a.teamspeak:focus,
+a.teamspeak:hover {
+    color: #285987 !important;
+}
+
+/*-- code --*/
+.show  code {
+    font-family: Whitney, Helvetica;
+    color: #dcddde;
+    letter-spacing: 0;
+    background-color: rgba(54, 57, 63, 1);
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: block;
+    overflow-x: scroll;
+}
+
+kbd {
+    white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding: 5vh 40vh;
+    }
+
+    img {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+
+    div.container h1 {
+        font-size: 4.5rem;
+        letter-spacing: 1.5vh;
+    }
+
+    section h1, section h2 {
+        letter-spacing: .75vh;
+    }
+
+    .mobile {
+        display: none;
+    }
 }
