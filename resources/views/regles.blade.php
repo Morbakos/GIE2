@@ -24,12 +24,12 @@
         <ul>
             <li>
                 <b>Pas de HRP en Mission</b>. Nous privilégions une immersion totale et par conséquent en mission 
-                vous êtes le soldat que vous interprétez. Si il souffre, vous souffrez, si il a peur, vous 
+                vous êtes le soldat que vous interprétez. S'il souffre, vous souffrez, s'il a peur, vous 
                 avez peur etc... Tenir à sa vie et à celle de ses coéquipiers <b>n'est pas OPTIONNEL</b>. 
                 Évitez tout propos qui pourrait nuire à l'environnement de chacun.
             </li><br>
             <li>
-                <b>CARTE VIERGE</b> : Hors les indications de missions et écriture faite en briefing de départ. 
+                <b>CARTE VIERGE</b> : Hors les indications de missions et écritures faites en briefing de départ. 
                 Il est interdit d’écrire sur votre carte.
             </li><br>
             <li>
@@ -65,8 +65,8 @@
             <li<b>Un seul Pseudo</b> : Merci de mettre le même pseudo TS qu'in game afin d'être facilement identifiable.</li><br><br>
             <li>
                 <b>Channel</b> : Le Ts Polygames est un Ts Multigaming, Respectez l'usages des chans !<br>
-                <i><u>Exemple :</u> Amau se trouvent 
-                dans le chan "Rocket league", ne venez pas lui parler d'ARMA. il s'en fou; il est en "game". Envoyez un mp, 
+                <i><u>Exemple :</u> Amau se trouve 
+                dans le chan "Rocket league", ne venez pas lui parler d'ARMA. il s'en fout; il est en "game". Envoyez un mp, 
                 il viendra dès qu'il le pourra.</i>
             </li><br>
             <li><b>Règles de base</b> : Pas d'insultes, de pub, de flood, harcèlement en poke, et tout le blabla habituel...</li><br>
@@ -120,7 +120,7 @@
         <ul>
         <li><b>Toute triche / bug use / cheat / abus est interdit et sera sanctionné d'un ban PERMANENT</b></li><br>
         <li><b>Le respects des autres joueurs est obligatoire</b> y compris hors de la communauté</li><br>
-        <li><b>Je signalerai tout problème</b> / conflit à un membres du Staff pour que celui ci soit pris en compte</li>
+        <li><b>Je signalerai tout problème</b> / conflit à un membre du Staff pour que celui ci soit pris en compte</li>
         </ul>
         <br><br>
     </div>

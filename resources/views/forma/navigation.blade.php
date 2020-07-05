@@ -29,7 +29,7 @@
     <div>
         <mark>
             On annonce un azimut qu'au pax proche de soit (< 10 mètres). L'azimut est différente pour tout le monde puisqu'il 
-            situe l'axe des points cardinaux par rapport à sois. Donc rien ne sert d'annoncer un azimut en radio, ça n'a aucun sens !
+            situe l'axe des points cardinaux par rapport à soi. Donc rien ne sert d'annoncer un azimut en radio, ça n'a aucun sens !
         </mark>
     </div>
 </section>
@@ -53,10 +53,10 @@
     <h2>Latitude - Longitude - Altitude</h2>
 
     <div>
-        <b>Latitude</b> : [Nord - Sud] Ligne vertical à l'équateur (cercle imaginaire autour de la terre situé 
+        <b>Latitude</b> : [Nord - Sud] Ligne verticale à l'équateur (cercle imaginaire autour de la terre situé 
         à égale distance des deux pôles). 
         <br><br>
-        <b>Longitude</b> : [Est - Ouest] Ligne horizontal parallèle aux méridiens (demi-cercle qui joint les deux pôles).
+        <b>Longitude</b> : [Est - Ouest] Ligne horizontale parallèle aux méridiens (demis-cercles qui joignent les deux pôles).
         <br><br>
         <b>Altitude</b> : Élévation du niveau de la terre par rapport au niveau moyen de la mer.
     </div>    
@@ -85,7 +85,7 @@
     
     <div>
         Sur votre carte faire intéraction Ace [<kbd>Ctrl</kbd> + <kbd>Win</kbd>] puis sélectionner 
-        <i>"Montrer les ouils de naviguation"</i>.
+        <i>"Montrer les outils de navigation"</i>.
         <br>
         Choisir alors <i>"petit outil"</i> pour les courtes distances ou <i>"moyen outil"</i> pour 
         les longues distances.

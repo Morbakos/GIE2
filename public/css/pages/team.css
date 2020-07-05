@@ -1,0 +1,46 @@
+.member img {
+    height: 20rem;
+    width: 20rem;
+    box-shadow: none;
+}
+
+.member {
+    background-color: var(--main-color);
+    display: inline-block;
+    border: 1px solid var(--active-color);
+    padding: 2rem 1rem;
+    margin: 7px 5px;
+    width: 20em;
+}
+
+.member h5 {
+    border-bottom: 1px solid var(--active-color);
+    width: 100%;
+}
+
+.member-bot {
+    
+}
+
+span.team-trait {
+    border-bottom: 1px solid var(--active-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.team {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section {
+    padding: 5vh 3vh;
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding: 5vh 40vh;
+    }
+}

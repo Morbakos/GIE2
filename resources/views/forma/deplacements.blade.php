@@ -42,7 +42,7 @@
             <li>Vos déplacements doivent prendre en compte la position de votre binôme/équipe</li>
             <li>Synchroniser vos actions avec le binôme et avec le reste de l'équipe</li>
             <li>
-                Toujours communiquer avec son équipe : tout acte doit être dis oralement<br>
+                Toujours communiquer avec son équipe : tout acte doit être dit oralement<br>
                 <i>Exemple : "Je me déplace", "Je recharge", "J'entre", "Je traverse", etc...</i>
             </li>
         </ul>
@@ -66,7 +66,7 @@
             <br><br>
             <u>Afin de ne jamais franchir une ligne de feu !</u>
             <br><br>
-            <u>Assures-vous qu'un alliée n'es pas en cours de repositionnement</u> et ne va pas franchir votre ligne de feu.
+            <u>Assurez-vous qu'un allié n'est pas en cours de repositionnement</u> et ne va pas franchir votre ligne de feu.
             <br><br>
             La ligne de feu est l'<b>élément le plus important à maîtriser en situation de combat dynamique</b> où il faut 
             se relocaliser après un ou plusieurs tirs afin d'éviter les tirs de riposte. 
@@ -89,7 +89,7 @@
             <li>Avant de bouger, je regarde où sont mes alliés dans l’<u>axe de progression</u> que j’ai choisi pour me relocaliser.</li>
             <li>
                 En situation de combat où des alliés se trouvent un peu sur mes avants, je surveille leurs mouvements.
-                Si ils tirent en bougeant, je n’hésite pas à annoncer «<u>ligne de feu</u>» ou «<u>ligne de feu *nom de la personne*</u>» 
+                S'ils tirent en bougeant, je n’hésite pas à annoncer «<u>ligne de feu</u>» ou «<u>ligne de feu *nom de la personne*</u>» 
                 de façon claire, afin qu’elle prenne compte qu’elle se trouve à la limite de ma ligne de tir.
             </li>
         </ul>
@@ -114,9 +114,9 @@
             C’est le déplacement le plus utilisé. Il permet une couverture constante en continuant de faire avancer l’unité.
             <br><br>
             <b style="color: #fcc795;">Orange</b> : assure la sécurité avant de l’équipe, oriente. 
-            Il se déplace de point en point et donne les ordre de stop. La tête va prendre les 12 (l’avant) et ouvrir la marche.
+            Il se déplace de point en point et donne les ordres de stop. La tête va prendre les 12 (l’avant) et ouvrir la marche.
             <br><br>
-            <b style="color: #defdaf;">Vert</b> : commande l’équipe, il règle l’allure, choisi les formations. Il assure aussi la sécurité aérienne et 
+            <b style="color: #defdaf;">Vert</b> : commande l’équipe, il règle l’allure, choisit les formations. Il assure aussi la sécurité aérienne et 
             droite de la colonne. Le second (généralement chef de l’escouade) va prendre un flan.
             <br><br>
             <b style="color: #fca7aa;">Rouge</b> : le troisième sera en charge de la sécurité aérienne et terrestre de la colonne à l'opposé de <b style="color: #defdaf;">Vert</b>.
@@ -181,7 +181,7 @@
                 <br><br>
                 Garder un rythme régulier et en cohésion avec le groupe.
                 <br><br>
-                Faite confiance à vos co-equipier et ne garder l’œil que sur votre degrés de vue (120° max).
+                Faites confiance à vos co-equipiers et ne garder l’œil que sur votre degré de vue (120° max).
             </i>
         </div>
     </div>
@@ -196,7 +196,7 @@
         <img src="/img/forma/y.png">
 
         <div class="left-deplacment">
-           Ce déplacement augmente la sécurité du groupe à l'avant. Il est idéale pour appréhender un carrefour.
+           Ce déplacement augmente la sécurité du groupe à l'avant. Il est idéal pour appréhender un carrefour.
         </div>
     </div>
 </section>
@@ -214,7 +214,7 @@
 
            <ol>
                <li>Le <b style="color: #08760a;">premier</b> se déplace vers un abri, pendant que le <b style="color: #75790b;">second</b> le couvre.</li>
-               <li>Le <b style="color: #75790b;">second</b> le rejoins, pendant que le <b style="color: #08760a;">premier</b> le couvre.</li>
+               <li>Le <b style="color: #75790b;">second</b> le rejoint, pendant que le <b style="color: #08760a;">premier</b> le couvre.</li>
                <li style="list-style-type: none;">etc...</li>
            </ol>
         </div>
@@ -276,11 +276,11 @@
         <img src="/img/forma/fatigue.gif">
 
         <div class="left-deplacment">
-            Il existe 4 type de déplacements : la marche, la course de patrouille [<kbd>C</kbd>], 
+            Il existe 4 types de déplacements : la marche, la course de patrouille [<kbd>C</kbd>], 
             la course (par défaut) et le sprint [<kbd>Shift</kbd>].
             
             <ul>
-                <li>Marcher pour se reposer (vous continuer d'avancer et récupérer)</li>
+                <li>Marcher pour se reposer (vous continuez d'avancer et récupérez)</li>
                 <li>Prioriser la course de patrouille [<kbd>C</kbd>]</li>
             </ul>
 
@@ -304,15 +304,15 @@
         <img src="/img/forma/traverser-rue.png">
 
         <div class="left-deplacment">
-            <b>!! Les formations de traversés de routes et de découverts ne s'appliquent que sous certaines conditions !!</b>
+            <b>!! Les formations de traversées de routes et de découverts ne s'appliquent que sous certaines conditions !!</b>
             <br><br>
             <ul>
                 <li>
-                    Dans le cas d'une traversé d'un groupe < 8 personnels seul les soldats <b style="color: #aa1e1e;">Rouge</b> 
+                    Dans le cas d'une traversée d'un groupe < 8 personnes, seuls les soldats <b style="color: #aa1e1e;">Rouge</b> 
                     et <b style="color: #46eb7d;">Vert</b> se mettront en place.
                 </li>
                 <li>
-                    Pour un groupe > 8 personnels on ajoutera les soldats <b style="color: #eb7d46;">Orange</b> 
+                    Pour un groupe > 8 personnes, on ajoutera les soldats <b style="color: #eb7d46;">Orange</b> 
                     et <b style="color: #46b4eb;">Bleu</b>.
                 </li>
             </ul>
@@ -357,8 +357,8 @@
                 pendant votre déplacement.
                 <br><br>
                 <small>
-                    Si vous traverser un découvert et n'êtes pas pris d'assaut, accélérer le pas. Restez le moins possible à découvert. 
-                    Ne traverser pas un champs accroupi ! 
+                    Si vous traversez un découvert et n'êtes pas pris d'assaut, accélérer le pas. Restez le moins possible à découvert. 
+                    Ne traversez pas un champs accroupi ! 
                 </small>
             </li>
         </ol>
@@ -374,9 +374,9 @@
         <img src="/img/forma/angle.png">
 
         <div class="left-deplacment">
-            <u><b>Utilisation du "point de tarte</b></u>
+            <u><b>Utilisation du "point de tarte"</b></u>
             <br><br>
-            On appel point de tarte le fait de faire pencher son arme pour se découvrir au minimum, <i>dans un angle par exemple</i>.
+            On appelle point de tarte le fait de faire pencher son arme pour se découvrir au minimum, <i>dans un angle par exemple</i>.
             <br><br>
             Pour cela on pense très fort à <kbd>Ctrl</kbd> + <kbd>E</kbd> ou à <kbd>Ctrl</kbd> + <kbd>A</kbd>.
             Pour bloquer ta position à gauche ou à droite il faudra penser à 2x <kbd>E</kbd> ou 2x <kbd>A</kbd>.

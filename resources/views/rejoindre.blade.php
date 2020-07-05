@@ -21,7 +21,7 @@
             <li>Nous utilisons <b>TFR</b> et <b>Ace médical avancée</b></li>
             <li>Nous possédons un <b>serveur dédié</b>, qui héberge nos missions</li>
             <li>Nous avons entre <b>20 et +50 ans</b> </li>
-            <li>Nous aimons avons tout jouer dans une <b>ambiance familiale</b></li>
+            <li>Nous aimons avant tout jouer dans une <b>ambiance familiale</b></li>
             <li>Nous privilégions du sérieux et du Role Play sur nos missions, du fun et de la détente sur nos trainings</li>
         </ul>
     </div>
@@ -73,7 +73,7 @@
 
     <div>
         <small>
-            Note : <i>hésites pas à consulter les fiches formations pour accélérer ta formation</i>
+            Note : <i>N'hésites pas à consulter les fiches formations pour accélérer ta formation</i>
         </small>
     </div>
 
@@ -116,7 +116,7 @@ Dimanche : aprem | soirée <br>
 🔹 <b><i>Arma :</i></b> 🔹 <br>
 <br>
 <b><i>
-Nombres d'heures joué : <br>
+Nombre d'heures jouées : <br>
 en Milsim : <br>
 Ancienne team : <br>
 </i></b>
@@ -126,12 +126,12 @@ Ancienne team : <br>
 <b><i>
 Comment as tu connu le GIE : <br>
 Pourquoi postuler au GIE : <br>
-As-tu lu, et accepte tu la charte sur le site du GIE ? <br>
+As-tu lu, et acceptes-tu la charte sur le site du GIE ? <br>
 </i></b>
 <br>
 🔹 <b><i>PRESENTE TOI</i></b> 🔹 <br>
 <i>
-Parle nous un peu de toi, des jeux auquel tu joue, de ton esprit team, tes atouts et tes defauts dans une équipe. <br>
+Parle nous un peu de toi, des jeux auquel tu joues, de ton esprit team, tes atouts et tes defauts dans une équipe. <br>
 </i>
 <br>
         </code>

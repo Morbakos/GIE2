@@ -11,7 +11,7 @@
     <div>
         Différentes fiches de formation sont disponibles afin de vous préparer à la pratique in-game (durée de 1h approximativement).
         <br>
-        Elles vous permettrons de vous familliariser avec notre façon de jouer. 
+        Elles vous permettront de vous familiariser avec notre façon de jouer. 
     </div>
 
     <div class="tabler">

@@ -98,7 +98,7 @@
         <a href="/regles">Chartes</a>
       </li>
       <li>
-        <a>Team</a>
+        <a href="/team">Team</a>
       </li>
       <li>
         <a href="/rejoindre">Rejoindre</a>

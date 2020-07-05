@@ -51,6 +51,10 @@ Route::get('/formations/radio', function () {
     return view('forma/radio');
 });
 
+Route::get('/team', function () {
+    return view('team');
+});
+
 /*
 Route::get('/demo', function () {
     return view('demo');

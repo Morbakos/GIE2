@@ -37,7 +37,7 @@
             Admettons que votre Squad Leader (abrégé SL par la suite) donne l'ordre de progresser en tiroir jusqu'à une position. 
             Avec un peu de chance, vous savez ce que cela signifie "tiroir" et pouvez vous intégrer rapidement à la manœuvre. 
             Dans le cas contraire, vous retardez la manœuvre et mettez la vie de vos équipiers en danger. Dans le RP, cela est 
-            handicapant pour vous, mais aussi pour ceux qui vous entoures. 
+            handicapant pour vous, mais aussi pour ceux qui vous entourent. 
         </i>
     </div>
 
@@ -45,7 +45,7 @@
         <i>
             Admettons maintenant que vous passiez entre 1h et 2h avant avec un formateur du G.I.E et que vous ayez appris toutes 
             les informations utiles susceptibles d'être utilisées pendant la mission. Vous aurez ainsi une meilleure compréhension 
-            des actions demandées par le SL, serez un peu plus autonomes, et cela apportera un plus à votre expérience sur la 
+            des actions demandées par le SL, serez un peu plus autonome, et cela apportera un plus à votre expérience sur la 
             mission, ainsi qu'aux autres soldats autour de vous.
         </i>
     </div>
@@ -67,7 +67,7 @@
                 Outil de tranchée - Lampe fulton - Balise IR
             </li>
             <li><b>Naviguation</b> : Coordonnées à 8 chiffres - Azimut - Cadran - Distance - DAGR</li>
-            <li><b>Formation</b> : Colone - Ligne - Chevron - Tiroir - Perroquet</li>
+            <li><b>Formation</b> : Colonne - Ligne - Chevron - Tiroir - Perroquet</li>
             <li><b>Déplacement</b> : Allure - Posture - Angle - Porte - 3D - Route - Point de tarte</li>
             <li><b>Combat</b> : Backblast - Fatigue - Trepier - Suppression - Superiorite du feu</li>
             <li><b>Communication</b> : DDRO - SITREP - Langue des signes - Compte rendu</li>
@@ -86,7 +86,7 @@
 
     <div>
         Dans un premier temps, nous considérons que <b>dès que vous vous connectez au serveur</b> vous avez 
-        <a href="/regles">lu approuver le règlement du G.I.E</a>. Par conséquent, <b>tout manquement au règlement
+        <a href="/regles">lu et approuvé le règlement du G.I.E</a>. Par conséquent, <b>tout manquement au règlement
         sera sanctionné</b>, du simple avertissement vocal et/ou écrit au ban permanent du serveur, en passant par 
         le ban temporaire ou la restriction de rôle in-game.
     </div>
@@ -127,8 +127,8 @@
     </div>
 
     <div>
-        Une fois votre formation validée par le formateur qui vous suis, et si le résultat est positif, 
-        vous pourrez alors vous joindre à nous dans nos missions et nos training, voir même 
+        Une fois votre formation validée par le formateur qui vous suit, et si le résultat est positif, 
+        vous pourrez alors vous joindre à nous dans nos missions et nos trainings, voir même 
         <a href="/rejoindre">postuler au statut de membre GIE</a>.
     </div>
 </section>
